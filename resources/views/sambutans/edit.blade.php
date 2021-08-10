@@ -37,15 +37,15 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="kepalaDesc">Deskripsi Kepala Sekolah</label>
-                                    <textarea name="kepalaDesc" class="form-control @error('kepalaDesc') is-invalid @enderror" placeholder="Deskripsi Kepala Sekolah" value="{{$sambutans->kepalaDesc}}"></textarea>
+                                    <textarea name="kepalaDesc" class="form-control @error('kepalaDesc') is-invalid @enderror" value="{{$sambutans->kepalaDesc}}"></textarea>
                                     <small class="text-danger">@error('kepalaDesc') {{$message}} @enderror</small>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="kepalaImage">Foto Kepala Sekolah</label>
-                                    <input type="file" name="kepalaImage" class="form-control @error('kepalaImage') is-invalid @enderror" placeholder="Foto Kepala Sekolah" value="{{$sambutans->kepalaImage}}">
-                                    <img src="{{ asset('images/sambutan/'.$sambutans->kepalaImage) }}" width="100px" height="80px" alt="Image">
+                                    <input type="file" name="kepalaImage" class="form-control @error('kepalaImage') is-invalid @enderror" value="{{$sambutans->kepalaImage}}">
+                                    <img src="{{ asset('images/sambutanKepala/'.$sambutans->kepalaImage) }}" width="100px" height="80px" alt="Image">
                                     <small class="text-danger">@error('kepalaImage') {{$message}} @enderror</small>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                                 <div class="form-group">
                                     <label for="guruImage">Foto Guru</label>
                                     <input type="file" name="guruImage" class="form-control @error('guruImage') is-invalid @enderror" placeholder="Foto Guru" value="{{$sambutans->guruImage}}">
-                                    <img src="{{ asset('images/sambutan/'.$sambutans->guruImage) }}" width="100px" height="80px" alt="Image">
+                                    <img src="{{ asset('images/sambutanGuru/'.$sambutans->guruImage) }}" width="100px" height="80px" alt="Image">
                                     <small class="text-danger">@error('guruImage') {{$message}} @enderror</small>
                                 </div>
                             </div>

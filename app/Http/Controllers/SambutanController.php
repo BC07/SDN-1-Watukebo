@@ -42,8 +42,8 @@ class SambutanController extends Controller
 
         if( $request->hasFile('kepalaImage') ) {
             $file = $request->file('kepalaImage');
-            $filename  = time() . '.' . $file->getClientOriginalName();
-            $file->move('images/sambutan/', $filename);
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/sambutanKepala/', $filename);
             $sambutans->kepalaImage = $filename;
         }
 
@@ -51,12 +51,12 @@ class SambutanController extends Controller
 
         if( $request->hasFile('guruImage') ) {
             $file = $request->file('guruImage');
-            $filename  = time() . '.' . $file->getClientOriginalName();
-            $file->move('images/sambutan/', $filename);
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/sambutanGuru/', $filename);
             $sambutans->guruImage = $filename;
         }
         $sambutans->save();
-        return redirect()->back()->with('status','Blog Image Added Successfully');
+        return redirect()->route('sambutans.index', [$sambutans]);
     }
 
     /**
@@ -95,32 +95,32 @@ class SambutanController extends Controller
         $sambutans->kepalaDesc = $request->input('kepalaDesc');
 
         if( $request->hasFile('kepalaImage') ) {
-            $destination= 'images/sambutan/'.$sambutans->kepalaImage;
+            $destination= 'images/sambutanKepala/'.$sambutans->kepalaImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
             $file = $request->file('kepalaImage');
-            $filename  = time() . '.' . $file->getClientOriginalName();
-            $file->move('images/sambutan/', $filename);
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/sambutanKepala/', $filename);
             $sambutans->kepalaImage = $filename;
         }
 
         $sambutans->guruDesc = $request->input('guruDesc');
 
         if( $request->hasFile('guruImage') ) {
-            $destination= 'images/sambutan/'.$sambutans->guruImage;
+            $destination= 'images/sambutanGuru/'.$sambutans->guruImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
             $file = $request->file('guruImage');
-            $filename  = time() . '.' . $file->getClientOriginalName();
-            $file->move('images/sambutan/', $filename);
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/sambutanGuru/', $filename);
             $sambutans->guruImage = $filename;
         }
         $sambutans->update();
-        return redirect()->back()->with('status','Blog Image Added Successfully');
+        return redirect()->route('sambutans.index', [$sambutans]);
     }
 
     /**
@@ -131,7 +131,20 @@ class SambutanController extends Controller
      */
     public function destroy($id)
     {
+        $sambutans = Sambutan::find($id);
+        
+        $destination= 'images/sambutanKepala/'.$sambutans->kepalaImage;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
+        $destination= 'images/sambutanGuru/'.$sambutans->guruImage;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
         Sambutan::findOrFail($id)->delete();
+        
         return redirect()->back();
     }
 }

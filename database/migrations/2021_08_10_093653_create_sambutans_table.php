@@ -15,9 +15,9 @@ class CreateSambutansTable extends Migration
     {
         Schema::create('sambutans', function (Blueprint $table) {
             $table->id();
-            $table->string('kepalaDesc', 5000);
+            $table->string('kepalaDesc', 5000)->nullable()->default(null);
             $table->string('kepalaImage')->nullable()->default(null);
-            $table->string('guruDesc', 5000);
+            $table->string('guruDesc', 5000)->nullable()->default(null);
             $table->string('guruImage')->nullable()->default(null);
             $table->timestamps();
         });

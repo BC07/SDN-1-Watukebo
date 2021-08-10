@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SambutanController;
+use App\Http\Controllers\BerandaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,5 @@ Route::get('/admin', function () {
 })->name('dashboard.index');
 
 Route::resource('sambutans', SambutanController::class);
+Route::resource('beranda', BerandaController::class);
+Route::get('/',[BerandaController::class, 'index'])->name('beranda.index');

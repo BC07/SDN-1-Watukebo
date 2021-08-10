@@ -52,11 +52,11 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $_sambutan->kepalaDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/sambutan/'.$_sambutan->kepalaImage) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/sambutanKepala/'.$_sambutan->kepalaImage) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>{{ $_sambutan->guruDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/sambutan/'.$_sambutan->guruImage) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/sambutanGuru/'.$_sambutan->guruImage) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>{{ $_sambutan->created_at }}</td>
                                     <td>
