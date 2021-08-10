@@ -36,7 +36,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="title">Deskripsi Kepala Sekolah</label>
-                                    <textarea name="kepalaDesc" class="form-control @error('kepalaDesc') is-invalid @enderror" placeholder="Deskripsi Kepala Sekolah"></textarea>
+                                    <textarea name="kepalaDesc" class="form-control @error('kepalaDesc') is-invalid @enderror"></textarea>
                                     <small class="text-danger">@error('kepalaDesc') {{$message}} @enderror</small>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="title">Deskripsi Guru</label>
-                                    <textarea name="guruDesc" class="form-control @error('guruDesc') is-invalid @enderror" placeholder="Deskripsi Guru"></textarea>
+                                    <textarea name="guruDesc" class="form-control @error('guruDesc') is-invalid @enderror"></textarea>
                                     <small class="text-danger">@error('guruDesc') {{$message}} @enderror</small>
                                 </div>
                             </div>
