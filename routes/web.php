@@ -23,6 +23,10 @@ Route::get('/admin', function () {
     return view('index');
 })->name('dashboard.index');
 
+Route::get('/informasi', function () {
+    return view('informasi');
+})->name('informasi.index');
+
 Route::resource('sambutans', SambutanController::class);
 Route::resource('beranda', BerandaController::class);
 Route::get('/',[BerandaController::class, 'index'])->name('beranda.index');

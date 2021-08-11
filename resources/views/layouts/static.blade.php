@@ -42,7 +42,7 @@
             <li ><a href="{{ route('beranda.index') }}" >Beranda</a></li>
             <li ><a href="./tentang.html" >Tentang Kami</a></li>
             <li ><a href="./program.html" >Program</a></li>
-            <li ><a href="./informasi.html" >Informasi</a></li>
+            <li ><a href="{{ route('informasi.index') }}" >Informasi</a></li>
         </ul>
         <div class="icon menu-btn">
             <i class="fas fa-bars"></i>
