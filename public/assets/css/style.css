@@ -692,7 +692,58 @@ footer a:hover {
     font-weight: bold !important;
 }
 
+/* Tabel Siswa */
 
+table th , table td{
+    text-align: center;
+}
+
+table tr:nth-child(even){
+    background-color: #f0fffc
+}
+
+th {
+  background: #1fab89;
+  color: #fff;
+}
+
+.pagination {
+  margin: 0;
+}
+
+.pagination li:hover{
+    cursor: pointer;
+
+}
+
+.header_wrap {
+  padding:30px 0;
+}
+.num_rows {
+  width: 20%;
+  float:left;
+}
+.tb_search{
+  width: 20%;
+  float:right;
+}
+.pagination-container {
+  width: 70%;
+  float:left;
+}
+
+.rows_count {
+  width: 20%;
+  float:right;
+  text-align:right;
+  color: #222;
+}
+
+.tabel-siswa-margin-top{
+    margin: 150px auto;
+}
+
+/* End Tabel Siswa */
 
 @media screen and (max-width:1024px) {
     ._navbar ul {
@@ -1001,6 +1052,12 @@ footer a:hover {
     }
 
     /* End Footer */
+
+    /* Data Siswa */
+    .tb_search{
+        width: auto;
+        float: right;
+    }
 }
 
 /* Mobile Version */
@@ -1237,6 +1294,12 @@ footer a:hover {
         
             position: relative;
             top: 0px;
+        }
+
+        /* Data Siswa */
+        .tb_search{
+            width: auto;
+            float: right;
         }
 }
 
