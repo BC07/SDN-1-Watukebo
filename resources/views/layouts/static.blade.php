@@ -21,6 +21,9 @@
     <!-- Font awesome icon CDN -->
     <script src="https://kit.fontawesome.com/a53375a708.js" crossorigin="anonymous"></script>
 
+    <!-- Icon -->
+    <link rel="Icon" href="{{ asset('assets/img/sd.png') }}">
+
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <!-- Title -->
@@ -30,7 +33,9 @@
 
     <!-- Navbar -->
     <nav class="_navbar">
-        <img src="{{ asset('assets/img/sd.png') }}" alt="" srcset="">
+        <a href="{{ route('beranda.index') }}">
+            <img src="{{ asset('assets/img/sd.png') }}" alt="" srcset="">
+        </a>
         <a href="#">
             <h4> SD Negeri 1 Watukebo </h4>
             <h6>Banyuwangi, Jawa Timur.</h6>

@@ -26,16 +26,16 @@
     <div class="row">
       <div class="col-lg-3 col-6">
         <!-- small box -->
-        <div class="small-box bg-info">
+        <div class="small-box bg-info" style="background-color: #393E46 !important;">
           <div class="inner">
+            <h3>{{ $datasiswa->count() }}</h3>
 
-
-            <p>Total Blog Post</p>
+            <p>Jumlah Data Siswa</p>
           </div>
           <div class="icon">
-            <i class="ion ion-bag"></i>
+            <i class="ion ion-person"></i>
           </div>
-          <a href="" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          <a href="{{ route('tabelsiswa.index') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->

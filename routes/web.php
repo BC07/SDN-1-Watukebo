@@ -35,3 +35,4 @@ Route::resource('tabelsiswa', TabelsiswaController::class);
 
 Route::get('/',[BerandaController::class, 'index'])->name('beranda.index');
 Route::get('/datasiswa',[DatasiswaController::class, 'index'])->name('datasiswa.index');
+Route::get('/admin',[DatasiswaController::class, 'show'])->name('dashboard.index');

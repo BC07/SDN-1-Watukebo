@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SDN 1 Watukebo Admin | @yield('title')</title>
-    <link rel="Icon" href="{{ asset('img/czz.png') }}">
+    <link rel="Icon" href="{{ asset('assets/img/sd.png') }}">
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -60,39 +60,17 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #1fab89 !important;">
             <!-- Brand Logo -->
             <a href="{{ route('dashboard.index') }}" class="brand-link">
-                <img src="{{ asset('img/czz.png') }}" alt="ChillZone Logo"
+                <img src="{{ asset('assets/img/sd.png') }}" alt="ChillZone Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">SDN 1 Watukebo Admin</span>
+                <span class="brand-text font-weight-bold">SDN 1 Watukebo Admin</span>
             </a>
 
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
-                <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="{{ asset('img/czz.png') }}" class="img-circle elevation-2"
-                            alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Admin</a>
-                    </div>
-                </div> -->
-
-                <!-- SidebarSearch Form -->
-                <!-- <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-                                <i class="fas fa-search fa-fw"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div> -->
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
@@ -118,7 +96,7 @@
                         <li class="nav-item">
                             <a href="{{ route('tabelsiswa.index') }}" class="nav-link {{Request::is('*tabelsiswa*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-address-card"></i>
-                                <p>
+                                <p class="font-weight-normal">
                                     Data Siswa
                                 </p>
                             </a>
