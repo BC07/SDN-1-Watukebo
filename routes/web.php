@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SambutanController;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\TabelsiswaController;
+use App\Http\Controllers\DatasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,4 +31,7 @@ Route::get('/informasi', function () {
 
 Route::resource('sambutans', SambutanController::class);
 Route::resource('beranda', BerandaController::class);
+Route::resource('tabelsiswa', TabelsiswaController::class);
+
 Route::get('/',[BerandaController::class, 'index'])->name('beranda.index');
+Route::get('/datasiswa',[DatasiswaController::class, 'index'])->name('datasiswa.index');

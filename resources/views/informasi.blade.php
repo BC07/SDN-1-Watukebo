@@ -124,7 +124,7 @@
         <p class="why">Mengenal Sekolah Lebih jauh</p>
       </div>
       <div class="koten-2-kotak ">
-        <button type='button' onclick="location.href='./tabelsiswa.html';" class='btn btn-primary center-block'> Klik Disini</button>
+        <button type='button' onclick="location.href='{{ route('datasiswa.index') }}';" class='btn btn-primary center-block'> Klik Disini</button>
       </div>
       <br>
     </div>

@@ -115,6 +115,14 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('tabelsiswa.index') }}" class="nav-link {{Request::is('*tabelsiswa*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    Data Siswa
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
