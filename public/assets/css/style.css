@@ -472,7 +472,6 @@ footer a:hover {
 #school-address h1 {
     font-weight: bold;
     text-align: center;
-    font-size: 26px;
 }
 
 /* .leftside,
@@ -1315,6 +1314,10 @@ th {
         
             position: relative;
             top: 0px;
+        }
+
+        #school-address h1 {
+            font-size: 26px;
         }
 
         /* Data Siswa */
