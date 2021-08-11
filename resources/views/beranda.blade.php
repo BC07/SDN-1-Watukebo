@@ -82,11 +82,6 @@
         <div class="col-lg-6 flex-col-sambutan">
             <h1>Kepala Sekolah</h1>
             <p>{{ $berandaa->kepalaDesc }}</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Dolorem sed impedit, omnis provident blanditiis iusto commodi consectetur, 
-                porro perferendis atque modi quibusdam sint odio facilis. 
-                Cumque et vero sed esse.
-            </p>
         </div>
         <div class="col-lg-6 flex-col-sambutan text-align-col">
             <img src="{{ asset('images/sambutanKepala/'.$berandaa->kepalaImage) }}" alt="image">
@@ -100,11 +95,6 @@
         <div class="col-lg-6 flex-col-sambutan">
             <h1>Guru & Staff</h1>
             <p>{{ $berandaa->guruDesc }}</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Dolorem sed impedit, omnis provident blanditiis iusto commodi consectetur, 
-                porro perferendis atque modi quibusdam sint odio facilis. 
-                Cumque et vero sed esse.
-            </p>
         </div>
     </div>
 @endforeach
