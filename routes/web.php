@@ -29,6 +29,10 @@ Route::get('/informasi', function () {
     return view('informasi');
 })->name('informasi.index');
 
+Route::get('/program', function () {
+    return view('program');
+})->name('program.index');
+
 Route::resource('sambutans', SambutanController::class);
 Route::resource('beranda', BerandaController::class);
 Route::resource('tabelsiswa', TabelsiswaController::class);
