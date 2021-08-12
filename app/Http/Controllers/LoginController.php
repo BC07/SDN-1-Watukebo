@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Admins;
 
 class LoginController extends Controller
 {
@@ -12,10 +13,27 @@ class LoginController extends Controller
     }
 
     public function login(Request $request){
-        if(Auth::guard('admin')->attempt($request->only('username', 'password'))){
-            return redirect('/admin');
+
+        $admins = new Admins;
+        $admins->name = 'admin';
+        $admins->username = 'adm1n123';
+        $admins->password = bcrypt('admin');
+
+        if(Admins::where('username', 'adm1n123')->first()){
+            if(Auth::guard('admin')->attempt($request->only('username', 'password'))){
+                return redirect('/admin');
+            }
+            else{
+                return redirect()->back()->with('fail', 'Username atau Password salah'); 
+            }
         }else{
-            return redirect()->back()->with('fail', 'Username atau Password salah'); 
+            $admins->save();
+            if(Auth::guard('admin')->attempt($request->only('username', 'password'))){
+                return redirect('/admin');
+            }
+            else{
+                return redirect()->back()->with('fail', 'Username atau Password salah'); 
+            }
         }
     }
 
