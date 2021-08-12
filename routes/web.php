@@ -71,3 +71,5 @@ Route::prefix('admin')->middleware('auth.admin')->group(function(){
     Route::put('account/update/{id}', [AccountController::class, 'update'])->name('account.update');
     Route::delete('account/destroy/{id}', [AccountController::class, 'destroy'])->name('account.destroy');
 });
+
+// Taro routing di atas sebelum "/login"
