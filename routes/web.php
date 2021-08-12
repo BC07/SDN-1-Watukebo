@@ -6,8 +6,14 @@ use App\Http\Controllers\SambutanController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\TabelsiswaController;
 use App\Http\Controllers\DatasiswaController;
+
 use App\Http\Controllers\LoginController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+
+use App\Http\Controllers\TentangKamiController;
+use App\Http\Controllers\GaleriTentangController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,12 +38,18 @@ Route::get('/informasi', function () {
     return view('informasi');
 })->name('informasi.index');
 
+Route::get('/tentang', function () {
+    return view('tentang');
+})->name('tentang.index');
+
 Route::resource('sambutans', SambutanController::class);
 Route::resource('beranda', BerandaController::class);
 Route::resource('tabelsiswa', TabelsiswaController::class);
+Route::resource('galeritentang', GaleriTentangController::class);
 
 Route::get('/',[BerandaController::class, 'index'])->name('beranda.index');
 Route::get('/datasiswa',[DatasiswaController::class, 'index'])->name('datasiswa.index');
+
 // databse
 // Route::get('/admin',[DatasiswaController::class, 'show'])->name('dashboard.index');
 // login
@@ -54,3 +66,8 @@ Route::prefix('admin')->middleware('auth.admin')->group(function(){
     Route::put('account/update/{id}', [AccountController::class, 'update'])->name('account.update');
     Route::delete('account/destroy/{id}', [AccountController::class, 'destroy'])->name('account.destroy');
 });
+
+Route::get('/admin',[DatasiswaController::class, 'show'])->name('dashboard.index');
+
+
+Route::get('/tentang',[GaleriTentangController::class, 'show'])->name('tentang.index');
