@@ -80,7 +80,7 @@
                         <li class="nav-item">
                             <a href="{{ route('dashboard.index') }}" class="nav-link {{Request::is('/') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
+                                <p style="color: #fff !important;">
                                     Dashboard
                                 </p>
                             </a>
@@ -88,7 +88,7 @@
                         <li class="nav-item">
                             <a href="{{ route('sambutans.index') }}" class="nav-link {{Request::is('*sambutans*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-box-open"></i>
-                                <p>
+                                <p style="color: #fff !important;"> 
                                     Sambutan
                                 </p>
                             </a>
@@ -96,8 +96,16 @@
                         <li class="nav-item">
                             <a href="{{ route('tabelsiswa.index') }}" class="nav-link {{Request::is('*tabelsiswa*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-address-card"></i>
-                                <p class="font-weight-normal">
+                                <p class="font-weight-normal" style="color: #fff !important;">
                                     Data Siswa
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('galeritentang.index') }}" class="nav-link {{Request::is('*galeritenta*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-images"></i>
+                                <p class="font-weight-normal" style="color: #fff !important;">
+                                    Galeri Tentang Kami
                                 </p>
                             </a>
                         </li>
