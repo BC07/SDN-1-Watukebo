@@ -98,7 +98,7 @@
                             <a href="{{ route('sambutans.index') }}"
                                 class="nav-link {{Request::is('*sambutans*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-box-open"></i>
-                                <p style="color: #fff !important;"> 
+                                <p style="color: #fff !important;">
                                     Sambutan
                                 </p>
                             </a>
@@ -121,18 +121,19 @@
                                 </p>
                             </a>
                         </li>
-<<<<<<< HEAD
 
-=======
+
+
                         <li class="nav-item">
-                            <a href="{{ route('galeritentang.index') }}" class="nav-link {{Request::is('*galeritenta*') ? 'active' : ''}}">
+                            <a href="{{ route('galeritentang.index') }}"
+                                class="nav-link {{Request::is('*galeritenta*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-images"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Galeri Tentang Kami
                                 </p>
                             </a>
                         </li>
->>>>>>> 8f12970cf78d664748f9b3ea369d6bdf27a9270e
+
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
