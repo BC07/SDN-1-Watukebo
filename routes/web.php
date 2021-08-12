@@ -5,6 +5,7 @@ use App\Http\Controllers\SambutanController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\TabelsiswaController;
 use App\Http\Controllers\DatasiswaController;
+use App\Http\Controllers\TentangKamiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,10 @@ Route::get('/admin', function () {
 Route::get('/informasi', function () {
     return view('informasi');
 })->name('informasi.index');
+
+Route::get('/tentang', function () {
+    return view('tentang');
+})->name('tentang.index');
 
 Route::resource('sambutans', SambutanController::class);
 Route::resource('beranda', BerandaController::class);
