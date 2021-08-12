@@ -53,6 +53,11 @@ Route::get('/datasiswa',[DatasiswaController::class, 'index'])->name('datasiswa.
 // databse
 // Route::get('/admin',[DatasiswaController::class, 'show'])->name('dashboard.index');
 // login
+Route::get('/admin',[DatasiswaController::class, 'show'])->name('dashboard.index');
+
+
+Route::get('/tentang',[GaleriTentangController::class, 'show'])->name('tentang.index');
+
 Route::get('/login', [LoginController::class, 'index'])->name('auth.index');
 Route::post('/login', [LoginController::class, 'login'])->name('auth.login');
 Route::get('/logout', [LoginController::class, 'logout'])->name('auth.logout');
@@ -66,8 +71,3 @@ Route::prefix('admin')->middleware('auth.admin')->group(function(){
     Route::put('account/update/{id}', [AccountController::class, 'update'])->name('account.update');
     Route::delete('account/destroy/{id}', [AccountController::class, 'destroy'])->name('account.destroy');
 });
-
-Route::get('/admin',[DatasiswaController::class, 'show'])->name('dashboard.index');
-
-
-Route::get('/tentang',[GaleriTentangController::class, 'show'])->name('tentang.index');
