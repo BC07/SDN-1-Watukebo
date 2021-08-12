@@ -5,6 +5,7 @@ use App\Http\Controllers\SambutanController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\TabelsiswaController;
 use App\Http\Controllers\DatasiswaController;
+use App\Http\Controllers\ProgramController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,7 +37,9 @@ Route::get('/program', function () {
 Route::resource('sambutans', SambutanController::class);
 Route::resource('beranda', BerandaController::class);
 Route::resource('tabelsiswa', TabelsiswaController::class);
+Route::resource('program', ProgramController::class);
 
 Route::get('/',[BerandaController::class, 'index'])->name('beranda.index');
 Route::get('/datasiswa',[DatasiswaController::class, 'index'])->name('datasiswa.index');
 Route::get('/admin',[DatasiswaController::class, 'show'])->name('dashboard.index');
+Route::get('/program',[ProgramController::class, 'index'])->name('program.index');

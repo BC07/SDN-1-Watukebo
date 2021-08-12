@@ -20,70 +20,46 @@
         </li>
     </ul>
 
+
+
     <div class="tab-content" style="background: #f2f2f2">
+        <!-- UMUM -->
         <div id="home" class="container tab-pane active">
             <br />
             <ul>
+                @foreach ($program as $program)
                 <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                    voluptatem aliquam, alias debitis molestiae conse temporibus?
+                    {{$program -> umum}}
                 </li>
-                <li>
-                    Optio voluptatem aliquam, alias debitis molestiae consequuntur
-                    temporibus?
-                </li>
-                <li>lias debitis molestiae consequuntur temporibus?</li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing alias debitis
-                    molestiae conseq temporibus?
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consecteturae consequuntur temporibus?
-                </li>
+                @endforeach
             </ul>
         </div>
+
+        <!-- KHUSUS -->
         <div id="menu1" class="container tab-pane fade">
             <br />
             <ul>
+                @foreach ($program as $khusus)
                 <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                    voluptatem aliquam, alias debitis molestiae conse temporibus?
+                    {{$khusus -> khusus}}
                 </li>
-                <li>
-                    Optio voluptatem aliquam, alias debitis molestiae consequuntur
-                    temporibus?
-                </li>
-                <li>lias debitis molestiae consequuntur temporibus?</li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing alias debitis
-                    molestiae conseq temporibus?
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consecteturae consequuntur temporibus?
-                </li>
+                @endforeach
             </ul>
         </div>
+
+        <!-- JANGKA PANJANG  -->
         <div id="menu2" class="container tab-pane fade">
             <br />
+
             <ul>
+                @foreach ($program as $program)
                 <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                    voluptatem aliquam, alias debitis molestiae conse temporibus?
+                    {{$program -> jangkapanjang}}
                 </li>
-                <li>
-                    Optio voluptatem aliquam, alias debitis molestiae consequuntur
-                    temporibus?
-                </li>
-                <li>lias debitis molestiae consequuntur temporibus?</li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing alias debitis
-                    molestiae conseq temporibus?
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consecteturae consequuntur temporibus?
-                </li>
+                @endforeach
             </ul>
         </div>
+
     </div>
 </div>
 <div class="container programbox">
