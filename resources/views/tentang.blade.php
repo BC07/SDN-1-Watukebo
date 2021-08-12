@@ -7,20 +7,22 @@
   <div class="header-img">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> -->
+        @foreach ($galeritentangs as $galeritentangss)
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{ $loop->index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
+        @endforeach
       </ol>
       <div class="carousel-inner" id="carouselTentang">
-        <div class="carousel-item active">
+        <!-- <div class="carousel-item active">
           <img src="{{ asset('assets/img/tentangkami.jpg') }}" class="d-block w-100" alt="...">
+        </div> -->
+
+        @foreach ($galeritentangs as $galeritentangss)
+        <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+          <img src="{{ asset('images/galeriTentang/'.$galeritentangss->galeriTentangImage) }}" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
-          <img src="{{ asset('assets/img/testtentang.jpg') }}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="{{ asset('assets/img/testtentang2.jpg') }}" class="d-block w-100" alt="...">
-        </div>
+        @endforeach
+
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

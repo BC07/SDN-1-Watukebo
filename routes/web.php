@@ -6,6 +6,8 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\TabelsiswaController;
 use App\Http\Controllers\DatasiswaController;
 use App\Http\Controllers\TentangKamiController;
+use App\Http\Controllers\GaleriTentangController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +39,11 @@ Route::get('/tentang', function () {
 Route::resource('sambutans', SambutanController::class);
 Route::resource('beranda', BerandaController::class);
 Route::resource('tabelsiswa', TabelsiswaController::class);
+Route::resource('galeritentang', GaleriTentangController::class);
 
 Route::get('/',[BerandaController::class, 'index'])->name('beranda.index');
 Route::get('/datasiswa',[DatasiswaController::class, 'index'])->name('datasiswa.index');
 Route::get('/admin',[DatasiswaController::class, 'show'])->name('dashboard.index');
+
+
+Route::get('/tentang',[GaleriTentangController::class, 'show'])->name('tentang.index');
