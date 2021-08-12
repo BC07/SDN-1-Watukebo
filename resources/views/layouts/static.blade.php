@@ -45,7 +45,7 @@
                 <i class="fas fa-times"></i>
             </div>
             <li ><a href="{{ route('beranda.index') }}" >Beranda</a></li>
-            <li ><a href="./tentang.html" >Tentang Kami</a></li>
+            <li ><a href="{{ route('tentang.index') }}" >Tentang Kami</a></li>
             <li ><a href="./program.html" >Program</a></li>
             <li ><a href="{{ route('informasi.index') }}" >Informasi</a></li>
         </ul>
