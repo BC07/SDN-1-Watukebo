@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\GaleriTentang;
+use App\Models\KelasDeskripsi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -59,7 +60,8 @@ class GaleriTentangController extends Controller
     public function show()
     {
         $galeritentangs = GaleriTentang::all();
-        return view('tentang', compact('galeritentangs'));
+        $kelasdeskripsi = KelasDeskripsi::all();
+        return view('tentang', compact('galeritentangs', 'kelasdeskripsi'));
     }
 
     /**

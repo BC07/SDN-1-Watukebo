@@ -37,7 +37,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="Kelas1Desc">Deskripsi Kelas 1</label>
-                                    <textarea name="kelas1Desc" class="form-control @error('kelas1Desc') is-invalid @enderror" value="{{$kelasdeskripsi->Kelas1Desc}}"></textarea>
+                                    <input type="text" name="kelas1Desc" class="form-control @error('kelas1Desc') is-invalid @enderror" value="{{$kelasdeskripsi->kelas1Desc}}"></input>
                                     <small class="text-danger">@error('KelasDesc') {{$message}} @enderror</small>
                                 </div>
                             </div>
