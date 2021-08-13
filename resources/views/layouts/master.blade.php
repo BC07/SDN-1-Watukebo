@@ -102,10 +102,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('galeritentang.index') }}" class="nav-link {{Request::is('*galeritenta*') ? 'active' : ''}}">
+                            <a href="{{ route('galeritentang.index') }}" class="nav-link {{Request::is('*galeritentang*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-images"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Galeri Tentang Kami
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('kelasdeskripsi.index') }}" class="nav-link {{Request::is('*kelasdeskripsi*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-images"></i>
+                                <p class="font-weight-normal" style="color: #fff !important;">
+                                    Deskripsi Kelas
                                 </p>
                             </a>
                         </li>
