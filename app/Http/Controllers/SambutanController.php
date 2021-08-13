@@ -26,7 +26,12 @@ class SambutanController extends Controller
      */
     public function create()
     {
-        return view('sambutans.create');
+        $sambutans = new Sambutan;
+        if(Sambutan::all()->isEmpty()){
+            return view('sambutans.create');
+        }else{
+            return redirect()->route('sambutans.index', [$sambutans]);
+        }
     }
 
     /**
@@ -41,19 +46,19 @@ class SambutanController extends Controller
         $sambutans->kepalaDesc = $request->input('kepalaDesc');
 
         if( $request->hasFile('kepalaImage') ) {
-            $file = $request->file('kepalaImage');
-            $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/sambutanKepala/', $filename);
-            $sambutans->kepalaImage = $filename;
+                $file = $request->file('kepalaImage');
+                $filename  = time() . '.' . $file->getClientOriginalExtension();
+                $file->move('images/sambutanKepala/', $filename);
+                $sambutans->kepalaImage = $filename;
         }
-
+    
         $sambutans->guruDesc = $request->input('guruDesc');
-
+    
         if( $request->hasFile('guruImage') ) {
-            $file = $request->file('guruImage');
-            $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/sambutanGuru/', $filename);
-            $sambutans->guruImage = $filename;
+                $file = $request->file('guruImage');
+                $filename  = time() . '.' . $file->getClientOriginalExtension();
+                $file->move('images/sambutanGuru/', $filename);
+                $sambutans->guruImage = $filename;
         }
         $sambutans->save();
         return redirect()->route('sambutans.index', [$sambutans]);

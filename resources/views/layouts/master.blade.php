@@ -141,7 +141,7 @@
                 <!-- LOGOUT -->
                 <div class="container keluar">
                     <div class="container text-center ">
-                        <a class="btn btn-primary " href="{{route('auth.logout')}}">Logout</a>
+                        <a class="btn" style="background-color: #FF616D; color: #fff" href="{{route('auth.logout')}}" >Logout</a>
                     </div>
                 </div>
 
