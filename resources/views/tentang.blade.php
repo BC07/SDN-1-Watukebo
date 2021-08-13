@@ -66,18 +66,18 @@
   </ul>
 
   <div class="tab-content" id="pills-tabContent">
+    @foreach ($kelasdeskripsi as $kelasdeskripsii)
     <div class="tab-pane fade show active" id="kelas1" role="tabpanel" aria-labelledby="kelas1">
       <div class="row">
         <div class="col text-center">
-          <img class="gambarKelas" src="{{ asset('assets/img/kelas1.png') }}" alt="">
+          <img class="gambarKelas" src="{{ asset('images/kelas1/'.$kelasdeskripsii->kelas1Image) }}" alt="">
         </div>
         <div class="col" id="textKelas">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, beatae ipsum? Quam adipisci, ea
-          inventore animi eaque architecto libero sit unde voluptas, nemo tempore amet, provident dolorum aperiam ex?
-          Cum?
+          {{ $kelasdeskripsii->kelas1Desc }}
         </div>
       </div>
     </div>
+    @endforeach
     <div class="tab-pane fade" id="kelas2" role="tabpanel" aria-labelledby="kelas2">
       <div class="row">
         <div class="col text-center">

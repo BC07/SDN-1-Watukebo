@@ -111,7 +111,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('kelasdeskripsi.index') }}" class="nav-link {{Request::is('*kelasdeskripsi*') ? 'active' : ''}}">
-                                <i class="nav-icon fas fa-images"></i>
+                                <i class="nav-icon fas fa-school"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Deskripsi Kelas
                                 </p>
@@ -128,6 +128,7 @@
         <div class="content-wrapper">
             @yield('content')
         </div>
+
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <strong>Copyright &copy; 2021.</strong>

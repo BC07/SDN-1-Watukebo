@@ -128,7 +128,7 @@ class KelasDeskripsiController extends Controller
 
         $kelasdeskripsi->kelas1Desc = $request->input('kelas1Desc');
         if( $request->hasFile('kelas1Image') ) {
-            $destination= 'images/kelas1Image/'.$kelasdeskripsi->kelas1Image;
+            $destination= 'images/kelas1/'.$kelasdeskripsi->kelas1Image;
             if (File::exists($destination))
             {
                 File::delete($destination);
@@ -141,7 +141,7 @@ class KelasDeskripsiController extends Controller
 
         $kelasdeskripsi->kelas2Desc = $request->input('kelas2Desc');
         if( $request->hasFile('kelas2Image') ) {
-            $destination= 'images/kelas2Image/'.$kelasdeskripsi->kelas2Image;
+            $destination= 'images/kelas2/'.$kelasdeskripsi->kelas2Image;
             if (File::exists($destination))
             {
                 File::delete($destination);
@@ -154,7 +154,7 @@ class KelasDeskripsiController extends Controller
 
         $kelasdeskripsi->kelas3Desc = $request->input('kelas3Desc');
         if( $request->hasFile('kelas3Image') ) {
-            $destination= 'images/kelas3Image/'.$kelasdeskripsi->kelas3Image;
+            $destination= 'images/kelas3/'.$kelasdeskripsi->kelas3Image;
             if (File::exists($destination))
             {
                 File::delete($destination);
@@ -167,7 +167,7 @@ class KelasDeskripsiController extends Controller
 
         $kelasdeskripsi->kelas4Desc = $request->input('kelas4Desc');
         if( $request->hasFile('kelas4Image') ) {
-            $destination= 'images/kelas4Image/'.$kelasdeskripsi->kelas4Image;
+            $destination= 'images/kelas4/'.$kelasdeskripsi->kelas4Image;
             if (File::exists($destination))
             {
                 File::delete($destination);
@@ -180,7 +180,7 @@ class KelasDeskripsiController extends Controller
 
         $kelasdeskripsi->kelas5Desc = $request->input('kelas5Desc');
         if( $request->hasFile('kelas5Image') ) {
-            $destination= 'images/kelas5Image/'.$kelasdeskripsi->kelas5Image;
+            $destination= 'images/kelas5/'.$kelasdeskripsi->kelas5Image;
             if (File::exists($destination))
             {
                 File::delete($destination);
@@ -193,7 +193,7 @@ class KelasDeskripsiController extends Controller
 
         $kelasdeskripsi->kelas6Desc = $request->input('kelas6Desc');
         if( $request->hasFile('kelas6Image') ) {
-            $destination= 'images/kelas6Image/'.$kelasdeskripsi->kelas6Image;
+            $destination= 'images/kelas6/'.$kelasdeskripsi->kelas6Image;
             if (File::exists($destination))
             {
                 File::delete($destination);

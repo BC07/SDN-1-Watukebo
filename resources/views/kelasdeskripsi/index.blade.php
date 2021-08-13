@@ -50,11 +50,6 @@
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
                                             class="btn btn-warning float-left m-1">Edit</a>
-                                        <form class="float-left m-1" action="{{ route('kelasdeskripsi.destroy', [$_kelasdeskripsi->id]) }}" method="POST">
-                                            @method('delete')
-                                            @csrf
-                                            <button type="submit" class="btn btn-danger">Delete</a>
-                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
@@ -89,11 +84,6 @@
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
                                             class="btn btn-warning float-left m-1">Edit</a>
-                                        <form class="float-left m-1" action="{{ route('kelasdeskripsi.destroy', [$_kelasdeskripsi->id]) }}" method="POST">
-                                            @method('delete')
-                                            @csrf
-                                            <button type="submit" class="btn btn-danger">Delete</a>
-                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
@@ -129,11 +119,111 @@
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
                                             class="btn btn-warning float-left m-1">Edit</a>
-                                        <form class="float-left m-1" action="{{ route('kelasdeskripsi.destroy', [$_kelasdeskripsi->id]) }}" method="POST">
-                                            @method('delete')
-                                            @csrf
-                                            <button type="submit" class="btn btn-danger">Delete</a>
-                                        </form>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="card-title">Data Deskripsi Kelas 4</h3>
+                    
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 4</th>
+                                <th>Gambar Kelas 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas3Desc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas4/'.$_kelasdeskripsi->kelas4Image) }}" width="100px" height="80px" alt="Image">
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="card-title">Data Deskripsi Kelas 5</h3>
+                    
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 5</th>
+                                <th>Gambar Kelas 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas5Desc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas5/'.$_kelasdeskripsi->kelas5Image) }}" width="100px" height="80px" alt="Image">
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="card-title">Data Deskripsi Kelas 6</h3>
+                    
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 6</th>
+                                <th>Gambar Kelas 6</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas3Desc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas6/'.$_kelasdeskripsi->kelas6Image) }}" width="100px" height="80px" alt="Image">
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
                                     </td>
                                 </tr>
                             @endforeach
