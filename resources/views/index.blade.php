@@ -60,10 +60,10 @@
           <div class="inner">
 
 
-            <p>Total Message</p>
+            <p>Total Prestasi</p>
           </div>
           <div class="icon">
-            <i class="ion ion-person-add"></i>
+            <i class="ion ion-ribbon-a"></i>
           </div>
           <a href="" class="small-box-footer" style="color: #fff !important;">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
