@@ -52,7 +52,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="guruDesc">Deskripsi Guru</label>
-                                    <textarea name="guruDesc" class="form-control @error('guruDesc') is-invalid @enderror" placeholder="Deskripsi Guru" value="{{$sambutans->guruDesc}}"></textarea>
+                                    <textarea name="guruDesc" class="form-control @error('guruDesc') is-invalid @enderror" placeholder="" value="{{$sambutans->guruDesc}}"></textarea>
                                     <small class="text-danger">@error('guruDesc') {{$message}} @enderror</small>
                                 </div>
                             </div>

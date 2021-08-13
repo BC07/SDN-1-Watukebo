@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Tabelsiswa;
+use App\Models\GaleriTentang;
 
 class DatasiswaController extends Controller
 {
@@ -48,7 +49,8 @@ class DatasiswaController extends Controller
     public function show()
     {
         $datasiswa = Tabelsiswa::all();
-        return view('index', compact('datasiswa'));
+        $galeritentangs = GaleriTentang::all();
+        return view('index', compact('datasiswa', 'galeritentangs'));
     }
 
     /**
