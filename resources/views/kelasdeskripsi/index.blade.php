@@ -147,7 +147,7 @@
                         <tbody>
                             @foreach ($kelasdeskripsi as $_kelasdeskripsi)
                                 <tr>
-                                    <td>{{ $_kelasdeskripsi->kelas3Desc }}</td>
+                                    <td>{{ $_kelasdeskripsi->kelas4Desc }}</td>
                                     <td>
                                         <img src="{{ asset('images/kelas4/'.$_kelasdeskripsi->kelas4Image) }}" width="100px" height="80px" alt="Image">
                                     </td>
@@ -217,7 +217,7 @@
                         <tbody>
                             @foreach ($kelasdeskripsi as $_kelasdeskripsi)
                                 <tr>
-                                    <td>{{ $_kelasdeskripsi->kelas3Desc }}</td>
+                                    <td>{{ $_kelasdeskripsi->kelas6Desc }}</td>
                                     <td>
                                         <img src="{{ asset('images/kelas6/'.$_kelasdeskripsi->kelas6Image) }}" width="100px" height="80px" alt="Image">
                                     </td>

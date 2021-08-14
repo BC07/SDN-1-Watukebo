@@ -38,7 +38,7 @@
                                 <div class="form-group">
                                     <label for="Kelas1Desc">Deskripsi Kelas 1</label>
                                     <input type="text" name="kelas1Desc" class="form-control @error('kelas1Desc') is-invalid @enderror" value="{{$kelasdeskripsi->kelas1Desc}}"></input>
-                                    <small class="text-danger">@error('KelasDesc') {{$message}} @enderror</small>
+                                    <small class="text-danger">@error('Kelas1Desc') {{$message}} @enderror</small>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -56,14 +56,14 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="kelas2Desc">Deskripsi Kelas 2</label>
-                                    <textarea name="kelas2Desc" class="form-control @error('Kelas2Desc') is-invalid @enderror" value="{{$kelasdeskripsi->Kelas2Desc}}"></textarea>
-                                    <small class="text-danger">@error('KelasDesc') {{$message}} @enderror</small>
+                                    <label for="Kelas2Desc">Deskripsi Kelas 2</label>
+                                    <input type="text" name="kelas2Desc" class="form-control @error('kelas2Desc') is-invalid @enderror" value="{{$kelasdeskripsi->kelas2Desc}}"></input>
+                                    <small class="text-danger">@error('Kelas2Desc') {{$message}} @enderror</small>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="Kelas1Image">Foto Kelas 2</label>
+                                    <label for="Kelas2Image">Foto Kelas 2</label>
                                     <input type="file" name="kelas2Image" class="form-control @error('kepalaImage') is-invalid @enderror" value="{{$kelasdeskripsi->Kelas2Image}}">
                                     <img src="{{ asset('images/kelas2/'.$kelasdeskripsi->kelas2Image) }}" width="100px" height="80px" alt="Image">
                                     <small class="text-danger">@error('Kelas2Image') {{$message}} @enderror</small>
@@ -77,8 +77,8 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="kelas3Desc">Deskripsi Kelas 3</label>
-                                    <textarea name="Kelas3Desc" class="form-control @error('Kelas3Desc') is-invalid @enderror" value="{{$kelasdeskripsi->Kelas3Desc}}"></textarea>
-                                    <small class="text-danger">@error('KelasDesc') {{$message}} @enderror</small>
+                                    <input type="text" name="kelas3Desc" class="form-control @error('kelas3Desc') is-invalid @enderror" value="{{$kelasdeskripsi->kelas3Desc}}"></input>
+                                    <small class="text-danger">@error('Kelas3Desc') {{$message}} @enderror</small>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -97,13 +97,13 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="kelas4Desc">Deskripsi Kelas 4</label>
-                                    <textarea name="Kelas4Desc" class="form-control @error('Kelas4Desc') is-invalid @enderror" value="{{$kelasdeskripsi->Kelas4Desc}}"></textarea>
-                                    <small class="text-danger">@error('KelasDesc') {{$message}} @enderror</small>
+                                    <input type="text" name="kelas4Desc" class="form-control @error('kelas4Desc') is-invalid @enderror" value="{{$kelasdeskripsi->kelas4Desc}}"></input>
+                                    <small class="text-danger">@error('Kelas4Desc') {{$message}} @enderror</small>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="Kelas1Image">Foto Kelas 4</label>
+                                    <label for="Kelas4Image">Foto Kelas 4</label>
                                     <input type="file" name="kelas4Image" class="form-control @error('kepalaImage') is-invalid @enderror" value="{{$kelasdeskripsi->Kelas4Image}}">
                                     <img src="{{ asset('images/kelas4/'.$kelasdeskripsi->kelas4Image) }}" width="100px" height="80px" alt="Image">
                                     <small class="text-danger">@error('Kelas4Image') {{$message}} @enderror</small>
@@ -117,8 +117,8 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="kelas5Desc">Deskripsi Kelas 5</label>
-                                    <textarea name="Kelas5Desc" class="form-control @error('Kelas5Desc') is-invalid @enderror" value="{{$kelasdeskripsi->Kelas5Desc}}"></textarea>
-                                    <small class="text-danger">@error('KelasDesc') {{$message}} @enderror</small>
+                                    <input type="text" name="kelas5Desc" class="form-control @error('kelas5Desc') is-invalid @enderror" value="{{$kelasdeskripsi->kelas5Desc}}"></input>
+                                    <small class="text-danger">@error('Kelas5Desc') {{$message}} @enderror</small>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -137,8 +137,8 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="kelas6Desc">Deskripsi Kelas 6</label>
-                                    <textarea name="Kelas6Desc" class="form-control @error('Kelas6Desc') is-invalid @enderror" value="{{$kelasdeskripsi->Kelas6Desc}}"></textarea>
-                                    <small class="text-danger">@error('KelasDesc') {{$message}} @enderror</small>
+                                    <input type="text" name="kelas6Desc" class="form-control @error('kelas6Desc') is-invalid @enderror" value="{{$kelasdeskripsi->kelas6Desc}}"></input>
+                                    <small class="text-danger">@error('Kelas6Desc') {{$message}} @enderror</small>
                                 </div>
                             </div>
                             <div class="col-12">
