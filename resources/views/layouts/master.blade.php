@@ -65,7 +65,15 @@
             <a href="{{ route('dashboard.index') }}" class="brand-link">
                 <img src="{{ asset('assets/img/sd.png') }}" alt="ChillZone Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-bold">SDN 1 Watukebo Admin</span>
+                <span class="brand-text font-weight-bold">SDN 1 Watukebo</span>
+            </a>
+
+            <!-- ACCOUNT -->
+            <a href="{{ route('dashboard.index') }}" class="brand-link">
+                <img src="{{ asset('assets/img/pro.png') }}" alt="Admin Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-normal">{{Auth::guard('admin')->user()->name}}</span>
+
             </a>
 
             <!-- Sidebar -->
@@ -78,7 +86,8 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="{{ route('dashboard.index') }}" class="nav-link {{Request::is('/') ? 'active' : ''}}">
+                            <a href="{{ route('dashboard.index') }}"
+                                class="nav-link {{Request::is('/') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p style="color: #fff !important;">
                                     Dashboard
@@ -86,21 +95,35 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('sambutans.index') }}" class="nav-link {{Request::is('*sambutans*') ? 'active' : ''}}">
+                            <a href="{{ route('sambutans.index') }}"
+                                class="nav-link {{Request::is('*sambutans*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-box-open"></i>
-                                <p style="color: #fff !important;"> 
+                                <p style="color: #fff !important;">
                                     Sambutan
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('tabelsiswa.index') }}" class="nav-link {{Request::is('*tabelsiswa*') ? 'active' : ''}}">
+                            <a href="{{ route('account.index') }}"
+                                class="nav-link {{Request::is('*account*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p class="font-weight-normal" style="color: #fff !important;">
+                                    Admin
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('tabelsiswa.index') }}"
+                                class="nav-link {{Request::is('*tabelsiswa*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-address-card"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Data Siswa
                                 </p>
                             </a>
                         </li>
+
+
+
                         <li class="nav-item">
                             <a href="{{ route('galeritentang.index') }}" class="nav-link {{Request::is('*galeritentang*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-images"></i>
@@ -120,8 +143,25 @@
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
+
+                <!-- LOGOUT -->
+                <div class="container keluar">
+                    <div class="container text-center ">
+                        <a class="btn" style="background-color: #FF616D; color: #fff" href="{{route('auth.logout')}}" >Logout</a>
+                    </div>
+                </div>
+
+                <style>
+                .keluar {
+                    height: auto;
+                    position: relative;
+                    top: 45%;
+                }
+                </style>
+
             </div>
             <!-- /.sidebar -->
+
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
@@ -152,8 +192,7 @@
     <script src="{{ asset('plugins/jquery-ui/jquery-ui.min.js') }}"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-        $.widget.bridge('uibutton', $.ui.button)
-
+    $.widget.bridge('uibutton', $.ui.button)
     </script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
