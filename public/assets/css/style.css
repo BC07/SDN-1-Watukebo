@@ -747,9 +747,12 @@ th {
     margin: 0;
 }
 
+.pagination li {
+    list-style-type: none;
+}
+
 .pagination li:hover {
     cursor: pointer;
-
 }
 
 .header_wrap {

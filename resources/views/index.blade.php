@@ -58,7 +58,7 @@
         <!-- small box -->
         <div class="small-box bg-warning" style="background-color: #81F5FF !important; color: #fff !important;">
           <div class="inner">
-
+          <h3>{{ $prestasi->count() }}</h3>
 
             <p>Total Prestasi</p>
           </div>
