@@ -121,19 +121,30 @@
                                 </p>
                             </a>
                         </li>
-
-
-
                         <li class="nav-item">
-                            <a href="{{ route('galeritentang.index') }}"
-                                class="nav-link {{Request::is('*galeritenta*') ? 'active' : ''}}">
+                            <a href="{{ route('galeritentang.index') }}" class="nav-link {{Request::is('*galeritentang*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-images"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Galeri Tentang Kami
                                 </p>
                             </a>
                         </li>
-
+                        <li class="nav-item">
+                            <a href="{{ route('kelasdeskripsi.index') }}" class="nav-link {{Request::is('*kelasdeskripsi*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-school"></i>
+                                <p class="font-weight-normal" style="color: #fff !important;">
+                                    Deskripsi Kelas
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('prestasi.index') }}" class="nav-link {{Request::is('*prestasi*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-star"></i>
+                                <p class="font-weight-normal" style="color: #fff !important;">
+                                    Prestasi Siswa
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -162,6 +173,7 @@
         <div class="content-wrapper">
             @yield('content')
         </div>
+
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <strong>Copyright &copy; 2021.</strong>

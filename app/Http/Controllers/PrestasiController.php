@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\GaleriTentang;
-use App\Models\KelasDeskripsi;
 use App\Models\Prestasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
-class GaleriTentangController extends Controller
+class PrestasiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +15,8 @@ class GaleriTentangController extends Controller
      */
     public function index()
     {
-        $galeritentangs = GaleriTentang::all();
-        return view('galeritentang.index', compact('galeritentangs'));
+        $prestasi = Prestasi::all();
+        return view('prestasi.index', compact('prestasi'));
     }
 
     /**
@@ -28,7 +26,7 @@ class GaleriTentangController extends Controller
      */
     public function create()
     {
-        return view('galeritentang.create');
+        return view('prestasi.create');
     }
 
     /**
@@ -39,17 +37,19 @@ class GaleriTentangController extends Controller
      */
     public function store(Request $request)
     {
-        $galeritentangs = new GaleriTentang;
+        $prestasi = new Prestasi;
 
-        if( $request->hasFile('galeriTentangImage') ) {
-            $file = $request->file('galeriTentangImage');
+        if( $request->hasFile('prestasiImage') ) {
+            $file = $request->file('prestasiImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/galeriTentang/', $filename);
-            $galeritentangs->galeriTentangImage = $filename;
+            $file->move('images/prestasi/', $filename);
+            $prestasi->prestasiImage = $filename;
         }
+        $prestasi->prestasiDesc = $request->input('prestasiDesc');
 
-        $galeritentangs->save();
-        return redirect()->route('galeritentang.index', [$galeritentangs]);
+
+        $prestasi->save();
+        return redirect()->route('prestasi.index', [$prestasi]);
     }
 
     /**
@@ -60,10 +60,8 @@ class GaleriTentangController extends Controller
      */
     public function show()
     {
-        $galeritentangs = GaleriTentang::all();
-        $kelasdeskripsi = KelasDeskripsi::all();
-        $prestasi = Prestasi::simplePaginate(6);
-        return view('tentang', compact('galeritentangs', 'kelasdeskripsi', 'prestasi'));
+        $prestasi = Prestasi::all();
+        return view('tentang', compact('prestasi'));
     }
 
     /**
@@ -74,8 +72,8 @@ class GaleriTentangController extends Controller
      */
     public function edit($id)
     {
-        $galeritentangs = GaleriTentang::findOrFail($id);
-        return view('galeritentang.edit', compact('galeritentangs'));    
+        $prestasi = Prestasi::findOrFail($id);
+        return view('prestasi.edit', compact('prestasi'));    
     }
 
     /**
@@ -87,22 +85,22 @@ class GaleriTentangController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $galeritentangs = GaleriTentang::find($id);
+        $prestasi = Prestasi::find($id);
 
-        if( $request->hasFile('galeriTentangImage') ) {
-            $destination = 'images/galeriTentang/'.$galeritentangs->galeriTentangImage;
+        if( $request->hasFile('prestasiImage') ) {
+            $destination = 'images/prestasi/'.$prestasi->prestasiImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
-            $file = $request->file('galeriTentangImage');
+            $file = $request->file('prestasiImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/galeriTentangImage/', $filename);
-            $galeritentangs->galeriTentangImage = $filename;
+            $file->move('images/prestasi/', $filename);
+            $prestasi->prestasiImage = $filename;
         }
 
-        $galeritentangs->update();
-        return redirect()->route('galeritentang.index', [$galeritentangs]);
+        $prestasi->update();
+        return redirect()->route('prestasi.index', [$prestasi]);
     }
 
     /**
@@ -113,20 +111,20 @@ class GaleriTentangController extends Controller
      */
     public function destroy($id)
     {
-        $galeritentangs = GaleriTentang::find($id);
+        $prestasi = Prestasi::find($id);
         
-        $destination = 'images/galeriTentang/'.$galeritentangs->galeriTentangImage;
+        $destination = 'images/prestasi/'.$prestasi->prestasiImage;
         
         if (File::exists($destination))
         {
             File::delete($destination);
         }
-        $destination= 'images/galeriTentang/'.$galeritentangs->galeriTentangImage;
+        $destination= 'images/prestasi/'.$prestasi->prestasiImage;
         if (File::exists($destination))
         {
             File::delete($destination);
         }
-        GaleriTentang::findOrFail($id)->delete();
+        Prestasi::findOrFail($id)->delete();
         
         return redirect()->back();
     }
