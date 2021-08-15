@@ -4,14 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Program;
+use App\Models\Sekolah;
+use App\Models\Siswa;
+use App\Models\Ekstrakurikuler;
 
 class ProgramController extends Controller
 {
     public function index()
     {
         $program = Program::all();
-        return view('program', compact('program'));
+        $umum = Program::get(['umum']);
+        $khusus = Program::get(['khusus']);
+        $jangkapanjang = Program::get(['jangkapanjang']);
+        $sekolah = Sekolah::get(['sekolahDesc', 'sekolahImage']);
+        $siswa = Siswa::get(['siswaDesc', 'siswaImage']);
+        $program = Program::all();
+        $ekstrakurikulers = Ekstrakurikuler::simplePaginate(3);
+        return view('program', compact('program', 'umum', 'khusus', 'jangkapanjang', 'sekolah', 'siswa', 'ekstrakurikulers'));
     }
+
 
     /**
      * Show the form for creating a new resource.
