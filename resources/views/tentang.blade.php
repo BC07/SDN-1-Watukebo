@@ -83,7 +83,7 @@
     <div class="tab-pane fade" id="kelas2" role="tabpanel" aria-labelledby="kelas2">
         <div class="row">
             <div class="col text-center">
-                <img class="gambarKelas" src="{{ asset('images/kelas2/'.$kelasdeskripsii->kelas1Image) }}" alt="">
+                <img class="gambarKelas" src="{{ asset('images/kelas2/'.$kelasdeskripsii->kelas2Image) }}" alt="">
             </div>
             <div class="col" id="textKelas">
                 {{ $kelasdeskripsii->kelas2Desc }}
@@ -140,132 +140,53 @@
 
 <!-- Carousel Prestasi Siswa -->
 
+
 <div class="container programbox">
     <h1>Prestasi Siswa</h1>
     <hr />
-    <div class="row">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="wrapperekskul">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="https://img.freepik.com/free-vector/empty-school-class-background_52683-47993.jpg?size=626&ext=jpg&ga=GA1.2.1932506915.1628208000" />
-                                        <div class="card-body">
-                                            <h3>Nature writing</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80" />
-                                        <div class="card-body">
-                                            <h3>What is Lorem Ipsum?</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="http://c.files.bbci.co.uk/C870/production/_112921315_gettyimages-876284806.jpg" />
-                                        <div class="card-body">
-                                            <h3>Nature writing</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="wrapperekskul">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="https://img.freepik.com/free-vector/empty-school-class-background_52683-47993.jpg?size=626&ext=jpg&ga=GA1.2.1932506915.1628208000" />
-                                        <div class="card-body">
-                                            <h3>Nature writing</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80" />
-                                        <div class="card-body">
-                                            <h3>What is Lorem Ipsum?</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="http://c.files.bbci.co.uk/C870/production/_112921315_gettyimages-876284806.jpg" />
-                                        <div class="card-body">
-                                            <h3>Nature writing</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="wrapperekskul">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="https://img.freepik.com/free-vector/empty-school-class-background_52683-47993.jpg?size=626&ext=jpg&ga=GA1.2.1932506915.1628208000" />
-                                        <div class="card-body">
-                                            <h3>Nature writing</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80" />
-                                        <div class="card-body">
-                                            <h3>What is Lorem Ipsum?</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img
-                                            src="http://c.files.bbci.co.uk/C870/production/_112921315_gettyimages-876284806.jpg" />
-                                        <div class="card-body">
-                                            <h3>Nature writing</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</div>
+
+<div class="home_body">
+    <div class="container">
+        <div class="latest_post">
+            <div class="latest_post_top">
+                <h1 class="latest_post_h1 brdr_line"></h1>
             </div>
 
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="row">
+
+                @foreach ($prestasi as $prestasii)
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a>
+                        <div class="home_card">
+                            <div class="home_card_top_gallery">
+                                <img class="imgPrestasi" src="{{ asset('images/prestasi/'.$prestasii->prestasiImage) }}"
+                                    alt="image">
+                            </div>
+                            <div class="home_card_bottom">
+                                <div class="home_card_bottom_text">
+                                    <p class="author_name">{{ $prestasii->prestasiDesc }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+
         </div>
     </div>
 </div>
 
 <!-- End Carousel Prestasi Siswa -->
+
+<div class="pagination">
+    <ul class="pagination_ul d-flex">
+        <li>
+            {{ $prestasi->links() }}
+        </li>
+    </ul>
+</div>
 
 <!-- End Main -->
 

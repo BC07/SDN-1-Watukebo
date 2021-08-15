@@ -26,6 +26,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/common.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
     <!-- Title -->
     <title>SDN 1 Watukebo</title>
 </head>

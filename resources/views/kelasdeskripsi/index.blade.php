@@ -27,9 +27,14 @@
                 <div class="card-header">
                     <div class="d-flex justify-content-between">
                         <h3 class="card-title">Data Deskripsi Kelas 1</h3>
-                        <a href="{{ route('kelasdeskripsi.create') }}" class="btn btn-sm btn-success"><i
-                                class="fas fa-plus"></i>
-                            Create</a>
+                        @if(count($kelasdeskripsi) < 1)
+                            <a href="{{ route('kelasdeskripsi.create') }}" class="btn btn-sm btn-success">
+                                <i class="fas fa-plus"></i>
+                                Create
+                            </a>
+                        @else
+                            
+                        @endif
                     </div>
                 </div>
                 <!-- /.card-header -->

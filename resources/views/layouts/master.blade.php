@@ -121,9 +121,6 @@
                                 </p>
                             </a>
                         </li>
-
-
-
                         <li class="nav-item">
                             <a href="{{ route('galeritentang.index') }}" class="nav-link {{Request::is('*galeritentang*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-images"></i>
@@ -137,6 +134,14 @@
                                 <i class="nav-icon fas fa-school"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Deskripsi Kelas
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('prestasi.index') }}" class="nav-link {{Request::is('*prestasi*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-star"></i>
+                                <p class="font-weight-normal" style="color: #fff !important;">
+                                    Prestasi Siswa
                                 </p>
                             </a>
                         </li>

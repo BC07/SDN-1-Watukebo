@@ -13,6 +13,8 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 use App\Http\Controllers\TentangKamiController;
 use App\Http\Controllers\GaleriTentangController;
 use App\Http\Controllers\KelasDeskripsiController;
+use App\Http\Controllers\PrestasiController;
+
 
 
 
@@ -48,6 +50,7 @@ Route::resource('beranda', BerandaController::class);
 Route::resource('tabelsiswa', TabelsiswaController::class);
 Route::resource('galeritentang', GaleriTentangController::class);
 Route::resource('kelasdeskripsi', KelasDeskripsiController::class);
+Route::resource('prestasi', PrestasiController::class);
 
 
 Route::get('/',[BerandaController::class, 'index'])->name('beranda.index');
