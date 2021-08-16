@@ -11,6 +11,7 @@ use App\Http\Controllers\ProgramSekolahController;
 use App\Http\Controllers\SekolahController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\EkstrakurikulerController;
+use App\Http\Controllers\LinkDaftarController;
 
 use App\Http\Controllers\LoginController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -59,12 +60,13 @@ Route::get('/tentang', function () {
 Route::resource('sambutans', SambutanController::class);
 Route::resource('beranda', BerandaController::class);
 Route::resource('tabelsiswa', TabelsiswaController::class);
+Route::resource('linkdaftars', LinkDaftarController::class);
 
 
 Route::resource('galeritentang', GaleriTentangController::class);
 Route::resource('kelasdeskripsi', KelasDeskripsiController::class);
 Route::resource('prestasi', PrestasiController::class);
-  
+
 Route::resource('program', ProgramController::class);
 Route::resource('programsekolah', ProgramSekolahController::class);
 Route::resource('sekolah', SekolahController::class);
