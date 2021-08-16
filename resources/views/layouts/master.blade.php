@@ -112,8 +112,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('tabelsiswa.index') }}"
-                                class="nav-link {{Request::is('*tabelsiswa*') ? 'active' : ''}}">
+                            <a href="{{ route('tabelsiswa.index') }}" class="nav-link {{Request::is('*tabelsiswa*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-address-card"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Data Siswa
@@ -121,51 +120,61 @@
                             </a>
                         </li>
                         <li class="nav-item">
-
                             <a href="{{ route('programsekolah.index') }}" class="nav-link {{Request::is('*programsekolah*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-address-card"></i>
-                                Program
+                                <p class="font-weight-normal" style="color: #fff !important;">
+                                    Program
+                                </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('ekstrakurikulers.index') }}" class="nav-link {{Request::is('ekstrakurikulers') ? 'active' : ''}}">
+                            <a href="{{ route('ekstrakurikulers.index') }}" class="nav-link {{Request::is('*ekstrakurikulers*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-address-card"></i>
-                                <p class="font-weight-normal">
+                                <p class="font-weight-normal" style="color: #fff !important;">
                                     Ekstrakurikuler
-
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('galeritentang.index') }}" class="nav-link {{Request::is('*galeritentang*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-images"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Galeri Tentang Kami
-
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-
-                            <a href="{{ route('sekolah.index') }}" class="nav-link {{Request::is('*sekolah*') ? 'active' : ''}}">
+                            <a href="{{ route('sekolah.index') }}" class="nav-link {{Request::is('sekolah*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-box-open"></i>
-                                <p>
+                                <p class="font-weight-normal" style="color: #fff !important;">
                                     Berita Sekolah
-
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('kelasdeskripsi.index') }}" class="nav-link {{Request::is('*kelasdeskripsi*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-school"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Deskripsi Kelas
-
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-
-                            <a href="{{ route('siswa.index') }}" class="nav-link {{Request::is('*siswa*') ? 'active' : ''}}">
+                            <a href="{{ route('siswa.index') }}" class="nav-link {{Request::is('siswa*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-users"></i>
-                                <p class="font-weight-normal">
+                                <p class="font-weight-normal" style="color: #fff !important;">
                                     Berita Siswa
                                 </p>
                             </a>
                         </li>
-
+                        <li class="nav-item">
+                            <a href="{{ route('prestasi.index') }}" class="nav-link {{Request::is('*prestasi*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-star"></i>
+                                <p class="font-weight-normal" style="color: #fff !important;">
+                                    Prestasi Siswa
+                                </p>
+                            </a>
+                        </li>
 
                         <!-- <li class="nav-item">
                             <a href="{{ route('programsekolah.index') }}" class="nav-link {{Request::is('*programsekolah*') ? 'active' : ''}}">
@@ -192,14 +201,6 @@
                             </a>
                         </li> -->
 
-                            <a href="{{ route('prestasi.index') }}" class="nav-link {{Request::is('*prestasi*') ? 'active' : ''}}">
-                                <i class="nav-icon fas fa-star"></i>
-                                <p class="font-weight-normal" style="color: #fff !important;">
-                                    Prestasi Siswa
-                                </p>
-                            </a>
-                        </li>
-
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -215,7 +216,7 @@
                 .keluar {
                     height: auto;
                     position: relative;
-                    top: 45%;
+                    top: 5%;
                 }
                 </style>
 
@@ -251,11 +252,7 @@
     <!-- jQuery UI 1.11.4 -->
     <script src="{{ asset('plugins/jquery-ui/jquery-ui.min.js') }}"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-
-    $.widget.bridge('uibutton', $.ui.button)
-
-    </script>
+    <script>$.widget.bridge('uibutton', $.ui.button)</script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- ChartJS -->

@@ -43,7 +43,7 @@
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="khusus">Program J</label>
+                                <label for="khusus">Program Khusus</label>
                                 <textarea name="khusus" class="form-control @error('khusus') is-invalid @enderror" placeholder="Program Khusus" value="{{$programsekolah->khusus}}">{{$programsekolah->khusus}}</textarea>
                                 <small class="text-danger">@error('khusus') {{$message}} @enderror</small>
                             </div>
