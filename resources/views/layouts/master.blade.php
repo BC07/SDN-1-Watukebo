@@ -103,9 +103,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('linkdaftars.index') }}"
+                                class="nav-link {{Request::is('*linkdaftars*') ? 'active' : ''}}">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p style="color: #fff !important;">
+                                    Link Pendaftaran
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('account.index') }}"
                                 class="nav-link {{Request::is('*account*') ? 'active' : ''}}">
-                                <i class="nav-icon fas fa-users"></i>
+                                <i class="nav-icon fas fa-user"></i>
                                 <p class="font-weight-normal" style="color: #fff !important;">
                                     Admin
                                 </p>

@@ -13,7 +13,9 @@
                 aliquid magnam reiciendis officia quam excepturi perferendis blanditiis.
             </P>
             <div class="contariner-home-card">
-                <button class="home-btn-card">Daftar</button>
+            @foreach ($linkdaftar as $_linkdaftar)
+                <button class="home-btn-card" onclick="window.location='{{ $_linkdaftar->linkdaftar }}'">Daftar</button>
+            @endforeach
             </div>
         </div>
     </div>
