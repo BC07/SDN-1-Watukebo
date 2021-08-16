@@ -85,7 +85,7 @@ class ProgramSekolahController extends Controller
 
         $programsekolah->khusus = $request->input('khusus');
 
-        $programsekolah->khusus = $request->input('jangkapanjang');
+        $programsekolah->jangkapanjang = $request->input('jangkapanjang');
 
         $programsekolah->update();
         return redirect()->route('programsekolah.index', [$programsekolah]);
