@@ -225,7 +225,7 @@
                 .keluar {
                     height: auto;
                     position: relative;
-                    top: 5%;
+                    top: 1%;
                 }
                 </style>
 
