@@ -26,7 +26,7 @@
     <div class="row">
       <div class="col-lg-3 col-6">
         <!-- small box -->
-        <div class="small-box bg-info" style="background-color: #393E46 !important;">
+        <div class="small-box bg-info" style="background-color: #FFD5E5 !important;">
           <div class="inner">
             <h3>{{ $datasiswa->count() }}</h3>
 
@@ -41,31 +41,31 @@
       <!-- ./col -->
       <div class="col-lg-3 col-6">
         <!-- small box -->
-        <div class="small-box bg-success">
+        <div class="small-box bg-success" style="background-color: #A0FFE6 !important;">
           <div class="inner">
-
+          <h3>{{ $galeritentangs->count() }}</h3>
 
             <p>Total Gallery</p>
           </div>
           <div class="icon">
-            <i class="ion ion-stats-bars"></i>
+            <i class="ion ion-images"></i>
           </div>
-          <a href="" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          <a href="{{ route('galeritentang.index') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
       <div class="col-lg-3 col-6">
         <!-- small box -->
-        <div class="small-box bg-warning">
+        <div class="small-box bg-warning" style="background-color: #81F5FF !important; color: #fff !important;">
           <div class="inner">
+          <h3>{{ $prestasi->count() }}</h3>
 
-
-            <p>Total Message</p>
+            <p>Total Prestasi</p>
           </div>
           <div class="icon">
-            <i class="ion ion-person-add"></i>
+            <i class="ion ion-ribbon-a"></i>
           </div>
-          <a href="" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          <a href="" class="small-box-footer" style="color: #fff !important;">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
     </div>

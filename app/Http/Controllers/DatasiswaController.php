@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Tabelsiswa;
+use App\Models\GaleriTentang;
+use App\Models\Prestasi;
 
 class DatasiswaController extends Controller
 {
@@ -48,7 +50,9 @@ class DatasiswaController extends Controller
     public function show()
     {
         $datasiswa = Tabelsiswa::all();
-        return view('index', compact('datasiswa'));
+        $galeritentangs = GaleriTentang::all();
+        $prestasi = Prestasi::all();
+        return view('index', compact('datasiswa', 'galeritentangs', 'prestasi'));
     }
 
     /**
