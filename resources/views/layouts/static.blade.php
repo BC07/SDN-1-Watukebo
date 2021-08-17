@@ -53,7 +53,7 @@
             <li ><a href="{{ route('tentang.index') }}" >Tentang Kami</a></li>
             <li><a href="{{ route('program.index') }}">Program</a></li>
             <li><a href="{{ route('informasi.index') }}">Informasi</a></li>
-        </ul>
+        </ul>   
         <div class="icon menu-btn">
             <i class="fas fa-bars"></i>
         </div>
