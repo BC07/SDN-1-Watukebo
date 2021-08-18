@@ -43,6 +43,13 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
+                                    <label for="nis">NIS</label>
+                                    <input type="text" name="nis" class="form-control @error('nis') is-invalid @enderror" placeholder="" value="{{$tabelsiswa->nis}}">
+                                    <small class="text-danger">@error('nis') {{$message}} @enderror</small>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
                                     <label for="nisn">NISN</label>
                                     <input type="text" name="nisn" class="form-control @error('nisn') is-invalid @enderror" placeholder="" value="{{$tabelsiswa->nisn}}">
                                     <small class="text-danger">@error('nisn') {{$message}} @enderror</small>

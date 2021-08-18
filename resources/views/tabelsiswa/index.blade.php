@@ -39,6 +39,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama</th>
+                                <th>NIS</th>
                                 <th>NISN</th>
                                 <th>TTL</th>
                                 <th>Created At</th>
@@ -50,6 +51,7 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $_tabelsiswa->name }}</td>
+                                    <td>{{ $_tabelsiswa->nis }}</td>
                                     <td>{{ $_tabelsiswa->nisn }}</td>
                                     <td>{{ $_tabelsiswa->ttl }}</td>
                                     <td>{{ $_tabelsiswa->created_at }}</td>
@@ -69,6 +71,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>Nama</th>
+                                <th>NIS</th>
                                 <th>NISN</th>
                                 <th>TTL</th>
                                 <th>Created At</th>

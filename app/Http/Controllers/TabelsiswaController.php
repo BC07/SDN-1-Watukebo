@@ -39,6 +39,7 @@ class TabelsiswaController extends Controller
     {
         $tabelsiswa = new Tabelsiswa;
         $tabelsiswa->name = $request->input('name');
+        $tabelsiswa->nis = $request->input('nis');
         $tabelsiswa->nisn = $request->input('nisn');
         $tabelsiswa->ttl = $request->input('ttl');
         $tabelsiswa->save();
@@ -79,6 +80,7 @@ class TabelsiswaController extends Controller
     {
         $tabelsiswa = Tabelsiswa::find($id);
         $tabelsiswa->name = $request->input('name');
+        $tabelsiswa->nis = $request->input('nis');
         $tabelsiswa->nisn = $request->input('nisn');
         $tabelsiswa->ttl = $request->input('ttl');
         $tabelsiswa->update();

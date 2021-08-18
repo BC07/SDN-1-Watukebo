@@ -35,6 +35,7 @@
             <thead>
                 <tr>
                     <th>Name</th>
+                    <th>NIS</th>
                     <th>NISN</th>
                     <th>TTL</th>
                 </tr>
@@ -43,6 +44,7 @@
             <tbody>
                 <tr>
                     <td>{{ $_datasiswa->name }}</td>
+                    <td>{{ $_datasiswa->nis }}</td>
                     <td>{{ $_datasiswa->nisn }}</td>
                     <td>{{ $_datasiswa->ttl }}</td>
                 </tr>
