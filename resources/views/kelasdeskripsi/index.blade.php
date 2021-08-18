@@ -42,16 +42,38 @@
                     <table id="table-sambutans" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Deskripsi Kelas 1</th>
-                                <th>Gambar Kelas 1</th>
+                                <th>Deskripsi Kelas 1a</th>
+                                <th>Gambar Kelas 1a</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($kelasdeskripsi as $_kelasdeskripsi)
                                 <tr>
-                                    <td>{{ $_kelasdeskripsi->kelas1Desc }}</td>
+                                    <td>{{ $_kelasdeskripsi->kelas1aDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/kelas1/'.$_kelasdeskripsi->kelas1Image) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/kelas1a/'.$_kelasdeskripsi->kelas1aImage) }}" width="100px" height="80px" alt="Image">
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 1b</th>
+                                <th>Gambar Kelas 1b</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas1bDesc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas1b/'.$_kelasdeskripsi->kelas1bImage) }}" width="100px" height="80px" alt="Image">
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
                                             class="btn btn-warning float-left m-1">Edit</a>
@@ -75,16 +97,39 @@
                     <table id="table-sambutans" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Deskripsi Kelas 2</th>
-                                <th>Gambar Kelas 2</th>
+                                <th>Deskripsi Kelas 2a</th>
+                                <th>Gambar Kelas 2a</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($kelasdeskripsi as $_kelasdeskripsi)
                                 <tr>
-                                    <td>{{ $_kelasdeskripsi->kelas2Desc }}</td>
+                                    <td>{{ $_kelasdeskripsi->kelas2aDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/kelas2/'.$_kelasdeskripsi->kelas2Image) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/kelas2a/'.$_kelasdeskripsi->kelas2aImage) }}" width="100px" height="80px" alt="Image">
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 2b</th>
+                                <th>Gambar Kelas 2b</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas2bDesc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas2b/'.$_kelasdeskripsi->kelas2bImage) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
@@ -110,16 +155,39 @@
                     <table id="table-sambutans" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Deskripsi Kelas 3</th>
-                                <th>Gambar Kelas 3</th>
+                                <th>Deskripsi Kelas 3a</th>
+                                <th>Gambar Kelas 3a</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($kelasdeskripsi as $_kelasdeskripsi)
                                 <tr>
-                                    <td>{{ $_kelasdeskripsi->kelas3Desc }}</td>
+                                    <td>{{ $_kelasdeskripsi->kelas3aDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/kelas3/'.$_kelasdeskripsi->kelas3Image) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/kelas3a/'.$_kelasdeskripsi->kelas3aImage) }}" width="100px" height="80px" alt="Image">
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 3b</th>
+                                <th>Gambar Kelas 3b</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas3bDesc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas3b/'.$_kelasdeskripsi->kelas3bImage) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
@@ -145,16 +213,39 @@
                     <table id="table-sambutans" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Deskripsi Kelas 4</th>
-                                <th>Gambar Kelas 4</th>
+                                <th>Deskripsi Kelas 4a</th>
+                                <th>Gambar Kelas 4a</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($kelasdeskripsi as $_kelasdeskripsi)
                                 <tr>
-                                    <td>{{ $_kelasdeskripsi->kelas4Desc }}</td>
+                                    <td>{{ $_kelasdeskripsi->kelas4aDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/kelas4/'.$_kelasdeskripsi->kelas4Image) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/kelas4/'.$_kelasdeskripsi->kelas4aImage) }}" width="100px" height="80px" alt="Image">
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 4b</th>
+                                <th>Gambar Kelas 4b</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas4bDesc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas4b/'.$_kelasdeskripsi->kelas4bImage) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
@@ -180,16 +271,39 @@
                     <table id="table-sambutans" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Deskripsi Kelas 5</th>
-                                <th>Gambar Kelas 5</th>
+                                <th>Deskripsi Kelas 5a</th>
+                                <th>Gambar Kelas 5a</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($kelasdeskripsi as $_kelasdeskripsi)
                                 <tr>
-                                    <td>{{ $_kelasdeskripsi->kelas5Desc }}</td>
+                                    <td>{{ $_kelasdeskripsi->kelas5aDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/kelas5/'.$_kelasdeskripsi->kelas5Image) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/kelas5a/'.$_kelasdeskripsi->kelas5aImage) }}" width="100px" height="80px" alt="Image">
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 5b</th>
+                                <th>Gambar Kelas 5b</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas5bDesc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas5b/'.$_kelasdeskripsi->kelas5bImage) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
@@ -215,16 +329,39 @@
                     <table id="table-sambutans" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Deskripsi Kelas 6</th>
-                                <th>Gambar Kelas 6</th>
+                                <th>Deskripsi Kelas 6a</th>
+                                <th>Gambar Kelas 6a</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($kelasdeskripsi as $_kelasdeskripsi)
                                 <tr>
-                                    <td>{{ $_kelasdeskripsi->kelas6Desc }}</td>
+                                    <td>{{ $_kelasdeskripsi->kelas6aDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/kelas6/'.$_kelasdeskripsi->kelas6Image) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/kelas6a/'.$_kelasdeskripsi->kelas6aImage) }}" width="100px" height="80px" alt="Image">
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
+                                            class="btn btn-warning float-left m-1">Edit</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+
+                    <table id="table-sambutans" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Deskripsi Kelas 6b</th>
+                                <th>Gambar Kelas 6b</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($kelasdeskripsi as $_kelasdeskripsi)
+                                <tr>
+                                    <td>{{ $_kelasdeskripsi->kelas6bDesc }}</td>
+                                    <td>
+                                        <img src="{{ asset('images/kelas6b/'.$_kelasdeskripsi->kelas6Image) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"

@@ -15,18 +15,35 @@ class CreateKelasDeskripsisTable extends Migration
     {
         Schema::create('kelas_deskripsis', function (Blueprint $table) {
             $table->id();
-            $table->string('kelas1Desc', 1000)->nullable()->default(null);
-            $table->string('kelas1Image')->nullable()->default(null);
-            $table->string('kelas2Desc', 1000)->nullable()->default(null);
-            $table->string('kelas2Image')->nullable()->default(null);
-            $table->string('kelas3Desc', 1000)->nullable()->default(null);
-            $table->string('kelas3Image')->nullable()->default(null);
-            $table->string('kelas4Desc', 1000)->nullable()->default(null);
-            $table->string('kelas4Image')->nullable()->default(null);
-            $table->string('kelas5Desc', 1000)->nullable()->default(null);
-            $table->string('kelas5Image')->nullable()->default(null);
-            $table->string('kelas6Desc', 1000)->nullable()->default(null);
-            $table->string('kelas6Image')->nullable()->default(null);
+            $table->string('kelas1aDesc', 500)->nullable()->default(null);
+            $table->string('kelas1aImage')->nullable()->default(null);
+            $table->string('kelas1bDesc', 500)->nullable()->default(null);
+            $table->string('kelas1bImage')->nullable()->default(null);
+
+            $table->string('kelas2aDesc', 500)->nullable()->default(null);
+            $table->string('kelas2aImage')->nullable()->default(null);
+            $table->string('kelas2bDesc', 500)->nullable()->default(null);
+            $table->string('kelas2bImage')->nullable()->default(null);
+
+            $table->string('kelas3aDesc', 500)->nullable()->default(null);
+            $table->string('kelas3aImage')->nullable()->default(null);
+            $table->string('kelas3bDesc', 500)->nullable()->default(null);
+            $table->string('kelas3bImage')->nullable()->default(null);
+
+            $table->string('kelas4aDesc', 500)->nullable()->default(null);
+            $table->string('kelas4aImage')->nullable()->default(null);
+            $table->string('kelas4bDesc', 500)->nullable()->default(null);
+            $table->string('kelas4bImage')->nullable()->default(null);
+
+            $table->string('kelas5aDesc', 500)->nullable()->default(null);
+            $table->string('kelas5aImage')->nullable()->default(null);
+            $table->string('kelas5bDesc', 500)->nullable()->default(null);
+            $table->string('kelas5bImage')->nullable()->default(null);
+
+            $table->string('kelas6aDesc', 500)->nullable()->default(null);
+            $table->string('kelas6aImage')->nullable()->default(null);
+            $table->string('kelas6bDesc', 500)->nullable()->default(null);
+            $table->string('kelas6bImage')->nullable()->default(null);
             $table->timestamps();
         });
     }

@@ -39,52 +39,94 @@ class KelasDeskripsiController extends Controller
     {
         $kelasdeskripsi = new KelasDeskripsi;
 
-        $kelasdeskripsi->kelas1Desc = $request->input('kelas1Desc');
-        if( $request->hasFile('kelas1Image') ) {
-            $file = $request->file('kelas1Image');
+        $kelasdeskripsi->kelas1aDesc = $request->input('kelas1aDesc');
+        if( $request->hasFile('kelas1aImage') ) {
+            $file = $request->file('kelas1aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas1/', $filename);
-            $kelasdeskripsi->kelas1Image = $filename;
+            $file->move('images/kelas1a/', $filename);
+            $kelasdeskripsi->kelas1aImage = $filename;
+        }
+        $kelasdeskripsi->kelas1bDesc = $request->input('kelas1bDesc');
+        if( $request->hasFile('kelas1bImage') ) {
+            $file = $request->file('kelas1bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas1b/', $filename);
+            $kelasdeskripsi->kelas1bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas2Desc = $request->input('kelas2Desc');
-        if( $request->hasFile('kelas2Image') ) {
-            $file = $request->file('kelas2Image');
+        $kelasdeskripsi->kelas2aDesc = $request->input('kelas2aDesc');
+        if( $request->hasFile('kelas2aImage') ) {
+            $file = $request->file('kelas2aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas2/', $filename);
-            $kelasdeskripsi->kelas2Image = $filename;
+            $file->move('images/kelas2a/', $filename);
+            $kelasdeskripsi->kelas2aImage = $filename;
+        }
+        $kelasdeskripsi->kelas2bDesc = $request->input('kelas2bDesc');
+        if( $request->hasFile('kelas2bImage') ) {
+            $file = $request->file('kelas2bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas2b/', $filename);
+            $kelasdeskripsi->kelas2bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas3Desc = $request->input('kelas3Desc');
-        if( $request->hasFile('kelas3Image') ) {
-            $file = $request->file('kelas3Image');
+        $kelasdeskripsi->kelas3aDesc = $request->input('kelas3aDesc');
+        if( $request->hasFile('kelas3aImage') ) {
+            $file = $request->file('kelas3aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas3/', $filename);
-            $kelasdeskripsi->kelas3Image = $filename;
+            $file->move('images/kelas3a/', $filename);
+            $kelasdeskripsi->kelas3aImage = $filename;
+        }
+        $kelasdeskripsi->kelas3bDesc = $request->input('kelas3bDesc');
+        if( $request->hasFile('kelas3bImage') ) {
+            $file = $request->file('kelas3bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas3b/', $filename);
+            $kelasdeskripsi->kelas3bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas4Desc = $request->input('kelas4Desc');
-        if( $request->hasFile('kelas4Image') ) {
-            $file = $request->file('kelas4Image');
+        $kelasdeskripsi->kelas4aDesc = $request->input('kelas4aDesc');
+        if( $request->hasFile('kelas4aImage') ) {
+            $file = $request->file('kelas4aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas4/', $filename);
-            $kelasdeskripsi->kelas4Image = $filename;
+            $file->move('images/kelas4a/', $filename);
+            $kelasdeskripsi->kelas4aImage = $filename;
+        }
+        $kelasdeskripsi->kelas4bDesc = $request->input('kelas4bDesc');
+        if( $request->hasFile('kelas4bImage') ) {
+            $file = $request->file('kelas4bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas4b/', $filename);
+            $kelasdeskripsi->kelas4bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas5Desc = $request->input('kelas5Desc');
-        if( $request->hasFile('kelas5Image') ) {
-            $file = $request->file('kelas5Image');
+        $kelasdeskripsi->kelas5aDesc = $request->input('kelas5aDesc');
+        if( $request->hasFile('kelas5aImage') ) {
+            $file = $request->file('kelas5aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas5/', $filename);
-            $kelasdeskripsi->kelas5Image = $filename;
+            $file->move('images/kelas5a/', $filename);
+            $kelasdeskripsi->kelas5aImage = $filename;
+        }
+        $kelasdeskripsi->kelas5bDesc = $request->input('kelas5bDesc');
+        if( $request->hasFile('kelas5bImage') ) {
+            $file = $request->file('kelas5bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas5b/', $filename);
+            $kelasdeskripsi->kelas5bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas6Desc = $request->input('kelas6Desc');
+        $kelasdeskripsi->kelas6aDesc = $request->input('kelas6aDesc');
         if( $request->hasFile('kelas6Image') ) {
             $file = $request->file('kelas6Image');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
             $file->move('images/kelas6/', $filename);
             $kelasdeskripsi->kelas6Image = $filename;
+        }
+        $kelasdeskripsi->kelas6bDesc = $request->input('kelas6bDesc');
+        if( $request->hasFile('kelas6aImage') ) {
+            $file = $request->file('kelas6aImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas6a/', $filename);
+            $kelasdeskripsi->kelas6aImage = $filename;
         }
 
         $kelasdeskripsi->save();
@@ -126,82 +168,155 @@ class KelasDeskripsiController extends Controller
     {
         $kelasdeskripsi = KelasDeskripsi::find($id);
 
-        $kelasdeskripsi->kelas1Desc = $request->input('kelas1Desc');
-        if( $request->hasFile('kelas1Image') ) {
-            $destination= 'images/kelas1/'.$kelasdeskripsi->kelas1Image;
+        $kelasdeskripsi->kelas1aDesc = $request->input('kelas1aDesc');
+        if( $request->hasFile('kelas1aImage') ) {
+            $destination= 'images/kelas1a/'.$kelasdeskripsi->kelas1aImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
-            $file = $request->file('kelas1Image');
+            $file = $request->file('kelas1aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas1/', $filename);
-            $kelasdeskripsi->kelas1Image = $filename;
+            $file->move('images/kelas1a/', $filename);
+            $kelasdeskripsi->kelas1aImage = $filename;
+        }
+        $kelasdeskripsi->kelas1bDesc = $request->input('kelas1bDesc');
+        if( $request->hasFile('kelas1bImage') ) {
+            $destination= 'images/kelas1b/'.$kelasdeskripsi->kelas1bImage;
+            if (File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $file = $request->file('kelas1bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas1b/', $filename);
+            $kelasdeskripsi->kelas1bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas2Desc = $request->input('kelas2Desc');
-        if( $request->hasFile('kelas2Image') ) {
-            $destination= 'images/kelas2/'.$kelasdeskripsi->kelas2Image;
+        $kelasdeskripsi->kelas2aDesc = $request->input('kelas2aDesc');
+        if( $request->hasFile('kelas2aImage') ) {
+            $destination= 'images/kelas2a/'.$kelasdeskripsi->kelas2aImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
-            $file = $request->file('kelas2Image');
+            $file = $request->file('kelas2aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas2/', $filename);
-            $kelasdeskripsi->kelas2Image = $filename;
+            $file->move('images/kelas2a/', $filename);
+            $kelasdeskripsi->kelas2aImage = $filename;
+        }
+        $kelasdeskripsi->kelas2bDesc = $request->input('kelas2bDesc');
+        if( $request->hasFile('kelas2bImage') ) {
+            $destination= 'images/kelas2b/'.$kelasdeskripsi->kelas2bImage;
+            if (File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $file = $request->file('kelas2bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas2b/', $filename);
+            $kelasdeskripsi->kelas2bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas3Desc = $request->input('kelas3Desc');
-        if( $request->hasFile('kelas3Image') ) {
-            $destination= 'images/kelas3/'.$kelasdeskripsi->kelas3Image;
+        $kelasdeskripsi->kelas3aDesc = $request->input('kelas3aDesc');
+        if( $request->hasFile('kelas3aImage') ) {
+            $destination= 'images/kelas3a/'.$kelasdeskripsi->kelas3aImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
-            $file = $request->file('kelas3Image');
+            $file = $request->file('kelas3aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas3/', $filename);
-            $kelasdeskripsi->kelas3Image = $filename;
+            $file->move('images/kelas3a/', $filename);
+            $kelasdeskripsi->kelas3aImage = $filename;
+        }
+        $kelasdeskripsi->kelas3bDesc = $request->input('kelas3bDesc');
+        if( $request->hasFile('kelas3bImage') ) {
+            $destination= 'images/kelas3b/'.$kelasdeskripsi->kelas3bImage;
+            if (File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $file = $request->file('kelas3bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas3b/', $filename);
+            $kelasdeskripsi->kelas3bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas4Desc = $request->input('kelas4Desc');
-        if( $request->hasFile('kelas4Image') ) {
-            $destination= 'images/kelas4/'.$kelasdeskripsi->kelas4Image;
+        $kelasdeskripsi->kelas4aDesc = $request->input('kelas4aDesc');
+        if( $request->hasFile('kelas4aImage') ) {
+            $destination= 'images/kelas4a/'.$kelasdeskripsi->kelas4aImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
-            $file = $request->file('kelas4Image');
+            $file = $request->file('kelas4aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas4/', $filename);
-            $kelasdeskripsi->kelas4Image = $filename;
+            $file->move('images/kelas4a/', $filename);
+            $kelasdeskripsi->kelas4aImage = $filename;
+        }
+        $kelasdeskripsi->kelas4bDesc = $request->input('kelas4bDesc');
+        if( $request->hasFile('kelas4bImage') ) {
+            $destination= 'images/kelas4b/'.$kelasdeskripsi->kelas4bImage;
+            if (File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $file = $request->file('kelas4bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas4b/', $filename);
+            $kelasdeskripsi->kelas4bImage = $filename;
+        }
+        
+
+        $kelasdeskripsi->kelas5aDesc = $request->input('kelas5aDesc');
+        if( $request->hasFile('kelas5aImage') ) {
+            $destination= 'images/kelas5a/'.$kelasdeskripsi->kelas5aImage;
+            if (File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $file = $request->file('kelas5aImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas5a/', $filename);
+            $kelasdeskripsi->kelas5aImage = $filename;
+        }
+        $kelasdeskripsi->kelas5bDesc = $request->input('kelas5bDesc');
+        if( $request->hasFile('kelas5bImage') ) {
+            $destination= 'images/kelas5b/'.$kelasdeskripsi->kelas5bImage;
+            if (File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $file = $request->file('kelas5bImage');
+            $filename  = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('images/kelas5b/', $filename);
+            $kelasdeskripsi->kelas5bImage = $filename;
         }
 
-        $kelasdeskripsi->kelas5Desc = $request->input('kelas5Desc');
-        if( $request->hasFile('kelas5Image') ) {
-            $destination= 'images/kelas5/'.$kelasdeskripsi->kelas5Image;
+        $kelasdeskripsi->kelas6aDesc = $request->input('kelas6aDesc');
+        if( $request->hasFile('kelas6aImage') ) {
+            $destination= 'images/kelas6a/'.$kelasdeskripsi->kelas6aImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
-            $file = $request->file('kelas5Image');
+            $file = $request->file('kelas6aImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas5/', $filename);
-            $kelasdeskripsi->kelas5Image = $filename;
+            $file->move('images/kelas6a/', $filename);
+            $kelasdeskripsi->kelas6aImage = $filename;
         }
-
-        $kelasdeskripsi->kelas6Desc = $request->input('kelas6Desc');
-        if( $request->hasFile('kelas6Image') ) {
-            $destination= 'images/kelas6/'.$kelasdeskripsi->kelas6Image;
+        $kelasdeskripsi->kelas6bDesc = $request->input('kelas6bDesc');
+        if( $request->hasFile('kelas6bImage') ) {
+            $destination= 'images/kelas6b/'.$kelasdeskripsi->kelas6bImage;
             if (File::exists($destination))
             {
                 File::delete($destination);
             }
-            $file = $request->file('kelas6Image');
+            $file = $request->file('kelas6bImage');
             $filename  = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('images/kelas6/', $filename);
-            $kelasdeskripsi->kelas6Image = $filename;
+            $file->move('images/kelas6b/', $filename);
+            $kelasdeskripsi->kelas6bImage = $filename;
         }
 
         $kelasdeskripsi->update();
@@ -218,37 +333,67 @@ class KelasDeskripsiController extends Controller
     {
         $kelasdeskripsi = KelasDeskripsi::find($id);
         
-        $destination= 'images/kelas1/'.$kelasdeskripsi->kelas1Image;
+        $destination= 'images/kelas1a/'.$kelasdeskripsi->kelas1aImage;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
+        $destination= 'images/kelas1b/'.$kelasdeskripsi->kelas1bImage;
         if (File::exists($destination))
         {
             File::delete($destination);
         }
 
-        $destination= 'images/kelas2/'.$kelasdeskripsi->kelas2Image;
+        $destination= 'images/kelas2a/'.$kelasdeskripsi->kelas2aImage;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
+        $destination= 'images/kelas2b/'.$kelasdeskripsi->kelas2bImage;
         if (File::exists($destination))
         {
             File::delete($destination);
         }
 
-        $destination= 'images/kelas3/'.$kelasdeskripsi->kelas4Image;
+        $destination= 'images/kelas3a/'.$kelasdeskripsi->kelas4aImage;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
+        $destination= 'images/kelas3b/'.$kelasdeskripsi->kelas4bImage;
         if (File::exists($destination))
         {
             File::delete($destination);
         }
 
-        $destination= 'images/kelas4/'.$kelasdeskripsi->kelas4Image;
+        $destination= 'images/kelas4a/'.$kelasdeskripsi->kelas4aImage;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
+        $destination= 'images/kelas4b/'.$kelasdeskripsi->kelas4bImage;
         if (File::exists($destination))
         {
             File::delete($destination);
         }
 
-        $destination= 'images/kelas5/'.$kelasdeskripsi->kelas5Image;
+        $destination= 'images/kelas5a/'.$kelasdeskripsi->kelas5aImage;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
+        $destination= 'images/kelas5b/'.$kelasdeskripsi->kelas5bImage;
         if (File::exists($destination))
         {
             File::delete($destination);
         }
 
-        $destination= 'images/kelas6/'.$kelasdeskripsi->kelas6Image;
+        $destination= 'images/kelas6a/'.$kelasdeskripsi->kelas6aImage;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
+        $destination= 'images/kelas6b/'.$kelasdeskripsi->kelas6bImage;
         if (File::exists($destination))
         {
             File::delete($destination);
