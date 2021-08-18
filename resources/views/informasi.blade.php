@@ -31,7 +31,7 @@
         <div class=" tutorial b">
           <div class='banner-img2'></div>
           <img src="{{ asset('assets/img/2.jpg') }}" alt='profile image' class="profile-img">
-          <h1 class="container name">Klick -> Daftar Peserta</h1>
+          <h1 class="container name">Klik -> Daftar Peserta</h1>
           <p class="description">Hi there! My name is Fahmi and I am a book lover, traveler and professional blogger.
             Follow me to stay connected!</p>
           <!-- <button class='btn'>Follow</button> -->

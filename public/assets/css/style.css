@@ -137,6 +137,7 @@ body {
 
 footer h6 {
     color: black;
+    font-size: smaller!important;
 }
 
 footer a {
@@ -287,8 +288,7 @@ footer a:hover {
     margin-bottom: 50px;
 }
 
-.kelasBawah {
-}
+.kelasBawah {}
 
 
 
@@ -384,14 +384,33 @@ footer a:hover {
     margin-bottom: 10rem;
 }
 
+#visi h2{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.visiContainer p {
+    /* height: 570px; */
+    font-size: 27px;
+    line-height: 2rem;
+}
+
+.misiContainer p {
+    /* height: 570px; */
+    /* font-size: 27px; */
+    /* line-height: 2rem; */
+    text-align: left;
+}
+
 
 .visiContainer {
-    padding: 0% 50% 0% 4%;
+    text-align: right;
+    padding: 0% 4% 0% 50%;
 }
 
 .misiContainer {
-    text-align: right;
-    padding: 0% 4% 0% 50%;
+    text-align: left;
+    padding: 0% 50% 0% 4%;
 }
 
 #kenapa-harus-watukebo {
@@ -497,11 +516,9 @@ footer a:hover {
     width: 100%;
 } */
 
-.leftside {
-}
+.leftside {}
 
-.rightside {
-}
+.rightside {}
 
 .leftside-item {
     /* position: relative; */
@@ -610,7 +627,7 @@ footer a:hover {
     width: 30% !important;
 }
 
-.stretch-card > .card {
+.stretch-card>.card {
     width: 100%;
     min-width: 100%;
     text-align: center;
@@ -1205,6 +1222,21 @@ th {
         padding: 0% 5%;
     }
 
+    .misiContainer ul .judul{
+        font-weight: bold;
+    }
+    
+    .misiContainer ul{
+        text-align: center;
+        list-style-type: none;
+        /* padding-bottom: 25px; */
+    }
+
+    .misiContainer li{
+        padding-bottom: 15px;
+    }
+
+
     /* School Address */
 
     .leftside-item {
@@ -1349,13 +1381,17 @@ th {
         float: right;
     }
 
-    .imgPrestasi{
-        width:100% !important;
-        display:block;
+    .imgPrestasi {
+        width: 100% !important;
+        display: block;
         height: 100% !important;
 
     }
-    
+
+    .footer .text-left {
+        text-align: center !important;
+    }
+
 }
 
 /* --------- INFORMASI ---------*/

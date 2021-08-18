@@ -73,7 +73,7 @@
     <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
         <section class="footer">
-            <div class="container text-center text-md-start mt-5">
+            <div class="container text-left text-md-start mt-5">
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->
@@ -103,7 +103,7 @@
                             <a href=""><i class="fas fa-map-marker-alt"></i> Banyuwangi, Jawa Timur, Indonesia</a>
                         </h6>
                         <h6>
-                            <a href=""><i class="fas fa-envelope"></i> sdn1watukebo.sch.id</a>
+                            <a href=""><i class="fas fa-envelope" ></i> blimbingsarisdn1watukebo@gmail.com</a>
                         </h6>
                         <h6>
                             <a href=""><i class="fas fa-phone"></i> 0(333)636246 </a>
