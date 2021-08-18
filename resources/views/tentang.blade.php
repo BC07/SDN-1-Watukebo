@@ -70,67 +70,121 @@
 <div class="tab-content" id="pills-tabContent">
     @foreach ($kelasdeskripsi as $kelasdeskripsii)
     <div class="tab-pane fade show active" id="kelas1" role="tabpanel" aria-labelledby="kelas1">
-        <div class="row">
+        <div class="row kelasAtas">
             <div class="col text-center">
-                <img class="gambarKelas" src="{{ asset('images/kelas1/'.$kelasdeskripsii->kelas1Image) }}" alt="">
+                <img class="gambarKelas" src="{{ asset('images/kelas1a/'.$kelasdeskripsii->kelas1aImage) }}" alt="">
             </div>
             <div class="col" id="textKelas">
-                {{ $kelasdeskripsii->kelas1Desc }}
+                {{ $kelasdeskripsii->kelas1aDesc }}
+            </div>
+        </div>
+
+        <div class="row kelasBawah">
+            <div class="col text-center">
+                <img class="gambarKelas" src="{{ asset('images/kelas1b/'.$kelasdeskripsii->kelas1bImage) }}" alt="">
+            </div>
+            <div class="col" id="textKelas">
+                {{ $kelasdeskripsii->kelas1bDesc }}
             </div>
         </div>
     </div>
 
     <div class="tab-pane fade" id="kelas2" role="tabpanel" aria-labelledby="kelas2">
-        <div class="row">
+        <div class="row kelasAtas">
             <div class="col text-center">
-                <img class="gambarKelas" src="{{ asset('images/kelas2/'.$kelasdeskripsii->kelas2Image) }}" alt="">
+                <img class="gambarKelas" src="{{ asset('images/kelas2a/'.$kelasdeskripsii->kelas2aImage) }}" alt="">
             </div>
             <div class="col" id="textKelas">
-                {{ $kelasdeskripsii->kelas2Desc }}
+                {{ $kelasdeskripsii->kelas2aDesc }}
+            </div>
+        </div>
+
+        <div class="row kelasBawah">
+            <div class="col text-center">
+                <img class="gambarKelas" src="{{ asset('images/kelas2b/'.$kelasdeskripsii->kelas2bImage) }}" alt="">
+            </div>
+            <div class="col" id="textKelas">
+                {{ $kelasdeskripsii->kelas2bDesc }}
             </div>
         </div>
     </div>
 
     <div class="tab-pane fade" id="kelas3" role="tabpanel" aria-labelledby="kelas3">
-        <div class="row">
+        <div class="row kelasAtas">
             <div class="col text-center">
-                <img class="gambarKelas" src="{{ asset('images/kelas3/'.$kelasdeskripsii->kelas3Image) }}" alt="">
+                <img class="gambarKelas" src="{{ asset('images/kelas3a/'.$kelasdeskripsii->kelas3aImage) }}" alt="">
             </div>
             <div class="col" id="textKelas">
-                {{ $kelasdeskripsii->kelas3Desc }}
+                {{ $kelasdeskripsii->kelas3aDesc }}
+            </div>
+        </div>
+
+        <div class="row kelasBawah">
+            <div class="col text-center">
+                <img class="gambarKelas" src="{{ asset('images/kelas3b/'.$kelasdeskripsii->kelas3bImage) }}" alt="">
+            </div>
+            <div class="col" id="textKelas">
+                {{ $kelasdeskripsii->kelas3bDesc }}
             </div>
         </div>
     </div>
 
     <div class="tab-pane fade" id="kelas4" role="tabpanel" aria-labelledby="kelas4">
-        <div class="row">
+        <div class="row kelasAtas">
             <div class="col text-center">
-                <img class="gambarKelas" src="{{ asset('images/kelas4/'.$kelasdeskripsii->kelas4Image) }}" alt="">
+                <img class="gambarKelas" src="{{ asset('images/kelas4a/'.$kelasdeskripsii->kelas4aImage) }}" alt="">
             </div>
             <div class="col" id="textKelas">
-                {{ $kelasdeskripsii->kelas4Desc }}
+                {{ $kelasdeskripsii->kelas4aDesc }}
+            </div>
+        </div>
+
+        <div class="row kelasBawah">
+            <div class="col text-center">
+                <img class="gambarKelas" src="{{ asset('images/kelas4b/'.$kelasdeskripsii->kelas4bImage) }}" alt="">
+            </div>
+            <div class="col" id="textKelas">
+                {{ $kelasdeskripsii->kelas4bDesc }}
             </div>
         </div>
     </div>
 
     <div class="tab-pane fade" id="kelas5" role="tabpanel" aria-labelledby="kelas5">
-        <div class="row">
+        <div class="row kelasAtas">
             <div class="col text-center">
-                <img class="gambarKelas" src="{{ asset('images/kelas5/'.$kelasdeskripsii->kelas5Image) }}" alt="">
+                <img class="gambarKelas" src="{{ asset('images/kelas5a/'.$kelasdeskripsii->kelas5aImage) }}" alt="">
             </div>
             <div class="col" id="textKelas">
-                {{ $kelasdeskripsii->kelas5Desc }}
+                {{ $kelasdeskripsii->kelas5aDesc }}
+            </div>
+        </div>
+
+        <div class="row kelasBawah">
+            <div class="col text-center">
+                <img class="gambarKelas" src="{{ asset('images/kelas5b/'.$kelasdeskripsii->kelas5bImage) }}" alt="">
+            </div>
+            <div class="col" id="textKelas">
+                {{ $kelasdeskripsii->kelas5bDesc }}
             </div>
         </div>
     </div>
 
     <div class="tab-pane fade" id="kelas6" role="tabpanel" aria-labelledby="kelas6">
-        <div class="row">
+        <div class="row kelasAtas">
             <div class="col text-center">
-                <img class="gambarKelas" src="{{ asset('images/kelas6/'.$kelasdeskripsii->kelas6Image) }}" alt="">
+                <img class="gambarKelas" src="{{ asset('images/kelas6a/'.$kelasdeskripsii->kelas6aImage) }}" alt="">
             </div>
             <div class="col" id="textKelas">
-                {{ $kelasdeskripsii->kelas6Desc }}
+                {{ $kelasdeskripsii->kelas6aDesc }}
+            </div>
+        </div>
+
+        <div class="row kelasBawah">
+            <div class="col text-center">
+                <img class="gambarKelas" src="{{ asset('images/kelas6b/'.$kelasdeskripsii->kelas6bImage) }}" alt="">
+            </div>
+            <div class="col" id="textKelas">
+                {{ $kelasdeskripsii->kelas6bDesc }}
             </div>
         </div>
     </div>

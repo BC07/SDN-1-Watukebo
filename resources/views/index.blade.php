@@ -28,9 +28,9 @@
         <!-- small box -->
         <div class="small-box bg-info" style="background-color: #FFD5E5 !important;">
           <div class="inner">
-            <h3>{{ $datasiswa->count() }}</h3>
+            <h3 style="color: black !important;" >{{ $datasiswa->count() }}</h3>
 
-            <p>Jumlah Data Siswa</p>
+            <p style="color: black !important;">Jumlah Data Siswa</p>
           </div>
           <div class="icon">
             <i class="ion ion-person"></i>
@@ -43,9 +43,9 @@
         <!-- small box -->
         <div class="small-box bg-success" style="background-color: #A0FFE6 !important;">
           <div class="inner">
-          <h3>{{ $galeritentangs->count() }}</h3>
+          <h3 style="color: black !important;">{{ $galeritentangs->count() }}</h3>
 
-            <p>Total Gallery</p>
+            <p style="color: black !important;">Total Gallery</p>
           </div>
           <div class="icon">
             <i class="ion ion-images"></i>
@@ -58,9 +58,9 @@
         <!-- small box -->
         <div class="small-box bg-warning" style="background-color: #81F5FF !important; color: #fff !important;">
           <div class="inner">
-          <h3>{{ $prestasi->count() }}</h3>
+          <h3 style="color: black !important;">{{ $prestasi->count() }}</h3>
 
-            <p>Total Prestasi</p>
+            <p style="color: black !important;">Total Prestasi</p>
           </div>
           <div class="icon">
             <i class="ion ion-ribbon-a"></i>
