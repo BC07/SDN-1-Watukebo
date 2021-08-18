@@ -16,6 +16,7 @@ class CreateTabelsiswasTable extends Migration
         Schema::create('tabelsiswas', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable()->default(null);
+            $table->string('nis')->nullable()->default(null);
             $table->string('nisn')->nullable()->default(null);
             $table->string('ttl')->nullable()->default(null);
             $table->timestamps();
