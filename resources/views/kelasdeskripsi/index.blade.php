@@ -222,7 +222,7 @@
                                 <tr>
                                     <td>{{ $_kelasdeskripsi->kelas4aDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/kelas4/'.$_kelasdeskripsi->kelas4aImage) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/kelas4a/'.$_kelasdeskripsi->kelas4aImage) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"
@@ -361,7 +361,7 @@
                                 <tr>
                                     <td>{{ $_kelasdeskripsi->kelas6bDesc }}</td>
                                     <td>
-                                        <img src="{{ asset('images/kelas6b/'.$_kelasdeskripsi->kelas6Image) }}" width="100px" height="80px" alt="Image">
+                                        <img src="{{ asset('images/kelas6b/'.$_kelasdeskripsi->kelas6bImage) }}" width="100px" height="80px" alt="Image">
                                     </td>
                                     <td>
                                         <a href="{{ route('kelasdeskripsi.edit', [$_kelasdeskripsi->id]) }}"

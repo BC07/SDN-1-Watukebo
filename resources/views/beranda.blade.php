@@ -32,10 +32,7 @@
 <section id="visi">
     <div class="visiContainer">
     <h2>Visi</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Culpa recusandae rerum eligendi ratione quis molestiae rem beatae dignissimos repellat mollitia! 
-        Assumenda labore unde, 
-        accusamus sapiente molestiae veritatis. Tempora, unde nemo.</p>
+    <p>“TERDEPAN DALAM IMTAK DAN IPTEK, TERBAIK DALAM PRESTASI, TERPERCAYA DI MASYARAKAT.”</p>
     </div>
     <br>
     <div class="misiContainer">
@@ -114,7 +111,7 @@
                         <h6>Say Hello!</h6>
                         <h3>TEKAN DAN JELAJAHI.</h3>
                         <hr>
-                        <p>Kita menunggu pesan dari kamu!</p>
+                        <p>Kami menunggu pesan dari kalian!</p>
                         <i class="fas fa-map-marker-alt">
                             <span>Banyuwangi, Jawa Timur, Indonesia</span>
                         </i>
