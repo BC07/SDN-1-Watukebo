@@ -106,7 +106,7 @@
                             <a href=""><i class="fas fa-envelope" ></i> blimbingsarisdn1watukebo@gmail.com</a>
                         </h6>
                         <h6>
-                            <a href=""><i class="fas fa-phone"></i> 0(333)636246 </a>
+                            <a href=""><i class="fas fa-phone"></i> 0333635646 </a>
                         </h6>
                     </div>
                     <!-- Grid column -->
