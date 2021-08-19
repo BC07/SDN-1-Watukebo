@@ -145,7 +145,7 @@
                             <span>blimbingsarisdn1watukebo@gmail.com</span>
                         </i>
                         <i class="fas fa-phone-alt">
-                            <span>0(333)636246</span>
+                            <span>0333635646</span>
                         </i>
                     </div>
                 </div>
