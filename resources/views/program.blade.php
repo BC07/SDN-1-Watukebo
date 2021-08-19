@@ -10,13 +10,10 @@
     <!--Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home">UMUM</a>
+            <a class="nav-link active" data-toggle="tab" href="#home">JANGKA PENDEK</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu1">KHUSUS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">JANGKA PANJANG</a>
+            <a class="nav-link" data-toggle="tab" href="#menu1">JANGKA PANJANG</a>
         </li>
     </ul>
 
@@ -35,22 +32,6 @@
                 @endif
                 <br>
                 @endforeach
-            </ul>
-        </div>
-
-        <!-- KHUSUS -->
-        <div id="menu1" class="container tab-pane fade  isiprogram">
-            <br />
-            <ul>
-                @foreach ($khusus as $khusus)
-                @if($khusus -> khusus != null)
-                ● &nbsp {{$khusus -> khusus}}
-                @else
-                <!-- &nbsp -->
-                @endif
-                <br>
-                @endforeach
-
             </ul>
         </div>
 
@@ -84,7 +65,7 @@
                         <div class="wrapperekskul">
                             <div class="pagination">
                                 <ul class="pagination_ul d-flex" id="pag-program" style="text-align=center" ;>
-                                    <li style="list-style: none; padding: 50px; pad">
+                                    <li style="list-style: none; padding: 50px;">
                                         {{ $ekstrakurikulers->links() }}
                                     </li>
                                 </ul>
@@ -93,7 +74,7 @@
                                 <div class="row">
                                     @foreach ($ekstrakurikulers as $ekskul)
 
-                                    
+
                                     <div class="col-md-4">
                                         <div class="card">
                                             <img src="{{ asset('images/ekstrakurikuler/'.$ekskul->ekskulImage) }}" />
@@ -177,27 +158,27 @@
 
 
 <script>
-    $(".menucarousel").owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: false
-            }
+$(".menucarousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false
+        },
+        600: {
+            items: 2,
+            nav: false
+        },
+        1000: {
+            items: 3,
+            nav: false
         }
-    });
+    }
+});
 </script>
 
 @endsection

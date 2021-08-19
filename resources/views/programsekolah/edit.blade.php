@@ -29,29 +29,27 @@
                 <h3 class="card-title">Edit Data</h3>
             </div>
             <!-- /.card-header -->
-            <form action="{{ route('programsekolah.update', [$programsekolah->id]) }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('programsekolah.update', [$programsekolah->id]) }}" method="POST"
+                enctype="multipart/form-data">
                 @CSRF
                 @method('put')
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="umum">Program Umum</label>
-                                <textarea name="umum" class="form-control @error('umum') is-invalid @enderror" value="{{$programsekolah->umum}}">{{$programsekolah->umum}}</textarea>
+                                <label for="umum">Program Jangka Pendek</label>
+                                <textarea name="umum" class="form-control @error('umum') is-invalid @enderror"
+                                    value="{{$programsekolah->umum}}">{{$programsekolah->umum}}</textarea>
                                 <small class="text-danger">@error('umum') {{$message}} @enderror</small>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="khusus">Program Khusus</label>
-                                <textarea name="khusus" class="form-control @error('khusus') is-invalid @enderror" placeholder="Program Khusus" value="{{$programsekolah->khusus}}">{{$programsekolah->khusus}}</textarea>
-                                <small class="text-danger">@error('khusus') {{$message}} @enderror</small>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group">
                                 <label for="jangkapanjang">Program Jangka Panjang</label>
-                                <textarea name="jangkapanjang" class="form-control @error('jangkapanjang') is-invalid @enderror" placeholder="Program Jangka Panjang" value="{{$programsekolah->jangkapanjang}}">{{$programsekolah->jangkapanjang}}</textarea>
+                                <textarea name="jangkapanjang"
+                                    class="form-control @error('jangkapanjang') is-invalid @enderror"
+                                    placeholder="Program Jangka Panjang"
+                                    value="{{$programsekolah->jangkapanjang}}">{{$programsekolah->jangkapanjang}}</textarea>
                                 <small class="text-danger">@error('jangkapanjang') {{$message}} @enderror</small>
                             </div>
                         </div>
