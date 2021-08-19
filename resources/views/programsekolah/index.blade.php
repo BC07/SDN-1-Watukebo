@@ -27,7 +27,8 @@
             <div class="card-header">
                 <div class="d-flex justify-content-between">
                     <h3 class="card-title">Data table of program sekolah</h3>
-                    <a href="{{ route('programsekolah.create') }}" class="btn btn-sm btn-success"><i class="fas fa-plus"></i>
+                    <a href="{{ route('programsekolah.create') }}" class="btn btn-sm btn-success"><i
+                            class="fas fa-plus"></i>
                         Create</a>
                 </div>
             </div>
@@ -37,8 +38,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Program Umum</th>
-                            <th>Program Khusus</th>
+                            <th>Program Jangka Pendek</th>
                             <th>Program Jangka Panjang</th>
                         </tr>
                     </thead>
@@ -47,11 +47,12 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $program->umum }}</td>
-                            <td>{{ $program->khusus }}</td>
                             <td>{{ $program->jangkapanjang }}</td>
                             <td>
-                                <a href="{{ route('programsekolah.edit', [$program->id]) }}" class="btn btn-warning float-left m-1">Edit</a>
-                                <form class="float-left m-1" action="{{ route('programsekolah.destroy', [$program->id]) }}" method="POST">
+                                <a href="{{ route('programsekolah.edit', [$program->id]) }}"
+                                    class="btn btn-warning float-left m-1">Edit</a>
+                                <form class="float-left m-1"
+                                    action="{{ route('programsekolah.destroy', [$program->id]) }}" method="POST">
                                     @method('delete')
                                     @csrf
                                     <button type="submit" class="btn btn-danger">Delete</a>
@@ -63,8 +64,7 @@
                     <tfoot>
                         <tr>
                             <th>No</th>
-                            <th>Program Umum</th>
-                            <th>Program Khusus</th>
+                            <th>Program Jangka Pendek</th>
                             <th>Program Jangka Panjang</th>
                         </tr>
                     </tfoot>
@@ -82,12 +82,12 @@
 <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
 <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
 <script>
-    $(function() {
-        $("#table-sekolah").DataTable({
-            "responsive": true,
-            "autoWidth": false,
-        });
+$(function() {
+    $("#table-sekolah").DataTable({
+        "responsive": true,
+        "autoWidth": false,
     });
+});
 </script>
 @endpush
 @push('css')

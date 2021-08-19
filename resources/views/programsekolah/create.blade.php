@@ -35,22 +35,18 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="umum">Program Umum</label>
-                                <textarea name="umum" class="form-control @error('umum') is-invalid @enderror" placeholder="Program Umum" value=""></textarea>
+                                <label for="umum">Program Jangka Pendek</label>
+                                <textarea name="umum" class="form-control @error('umum') is-invalid @enderror"
+                                    placeholder="Program Jangka Pendek" value=""></textarea>
                                 <small class="text-danger">@error('umum') {{$message}} @enderror</small>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="khusus">Program Khusus</label>
-                                <textarea name="khusus" class="form-control @error('khusus') is-invalid @enderror" placeholder="Program Khusus" value=""></textarea>
-                                <small class="text-danger">@error('khusus') {{$message}} @enderror</small>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group">
                                 <label for="jangkapanjang">Program Jangka Panjang</label>
-                                <textarea name="jangkapanjang" class="form-control @error('jangkapanjang') is-invalid @enderror" placeholder="Program Jangka Panjang" value=""></textarea>
+                                <textarea name="jangkapanjang"
+                                    class="form-control @error('jangkapanjang') is-invalid @enderror"
+                                    placeholder="Program Jangka Panjang" value=""></textarea>
                                 <small class="text-danger">@error('jangkapanjang') {{$message}} @enderror</small>
                             </div>
                         </div>
