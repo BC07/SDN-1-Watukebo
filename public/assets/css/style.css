@@ -790,7 +790,7 @@ th {
 }
 
 .pagination-container {
-    width: 70%;
+    width: none;
     float: left;
 }
 
@@ -1358,15 +1358,15 @@ th {
     }
 
     .text-align-col img {
-        width: 70%;
-
+        width: 100%;
+        padding-top: 30px;
         position: relative;
         bottom: 0px;
     }
 
     .text-align-col2 img {
-        width: 75%;
-
+        width: 100%;
+        padding-top: 30px;
         position: relative;
         top: 0px;
     }
@@ -1670,5 +1670,5 @@ th {
 }
 
 #tinggi-data-siswa {
-    height: 50vh;
+    padding-bottom: 6rem;
 }
