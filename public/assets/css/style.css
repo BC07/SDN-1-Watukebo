@@ -791,14 +791,14 @@ th {
 }
 
 .pagination-container {
-    width: 70%;
+    width: 100%;
     float: left;
 }
 
 .rows_count {
-    width: 20%;
+    width: 100%;
     float: right;
-    text-align: right;
+    text-align: none;
     color: #222;
 }
 
@@ -1671,5 +1671,5 @@ th {
 }
 
 #tinggi-data-siswa {
-    height: max-content;
+    padding-bottom: 6rem;
 }
