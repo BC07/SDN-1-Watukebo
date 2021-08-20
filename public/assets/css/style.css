@@ -154,6 +154,7 @@ footer a:hover {
     cursor: pointer;
 }
 
+
 /* End Footer */
 
 /* Tentang Kami */
@@ -790,13 +791,14 @@ th {
 }
 
 .pagination-container {
-    width: none;
+    width: 70%;
     float: left;
 }
 
 .rows_count {
-    width: 100%;
+    width: 20%;
     float: right;
+    text-align: right;
     color: #222;
 }
 
@@ -1246,7 +1248,7 @@ th {
         top: 0px;
         text-align: center;
         margin: 0 auto;
-        padding: 55px 0px;
+        padding: 55px;
         background: #f3fffc;
         border-radius: 26px;
         border: 4px solid #1fab89;
@@ -1357,15 +1359,15 @@ th {
     }
 
     .text-align-col img {
-        width: 100%;
-        padding-top: 30px;
+        width: 70%;
+
         position: relative;
         bottom: 0px;
     }
 
     .text-align-col2 img {
-        width: 100%;
-        padding-top: 30px;
+        width: 75%;
+
         position: relative;
         top: 0px;
     }
@@ -1669,5 +1671,5 @@ th {
 }
 
 #tinggi-data-siswa {
-    padding-bottom: 6rem;
+    height: max-content;
 }

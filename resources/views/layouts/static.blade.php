@@ -26,7 +26,7 @@
     <link rel="Icon" href="{{ asset('assets/img/sd.png') }}">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css?version=1') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/common.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
@@ -70,7 +70,7 @@
 
     <!-- Footer -->
 
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="text-center text-lg-start bg-light text-muted footerflow">
         <!-- Section: Links  -->
         <section class="footer">
             <div class="container text-left text-md-start mt-5">
