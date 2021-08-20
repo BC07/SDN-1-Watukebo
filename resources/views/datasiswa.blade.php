@@ -3,8 +3,7 @@
 
 <!-- partial:index.partial.html -->
 <section id="tinggi-data-siswa">
-<div style="overflow-x:auto;">
-<div class="container tabel-siswa-margin-top">
+    <div class="container tabel-siswa-margin-top">
         <div class="header_wrap">
             <div class="num_rows">
 
@@ -29,6 +28,8 @@
         </div>
 
         <table class="table table-striped table-class" id="table-id">
+
+
             <thead>
                 <tr>
                     <th>Name</th>
@@ -37,8 +38,8 @@
                     <th>TTL</th>
                 </tr>
             </thead>
+            @foreach ($datasiswa as $_datasiswa)
             <tbody>
-                @foreach ($datasiswa as $_datasiswa)
                 <tr>
                     <td>{{ $_datasiswa->name }}</td>
                     <td>{{ $_datasiswa->nis }}</td>
@@ -63,8 +64,15 @@
         </div>
 
     </div> <!-- 		End of Container -->
-</div>
-
 </section>
+
+<!-- <style>
+    .footerflow{
+    position: absolute!important;
+    bottom: 0!important;
+    width: 100%!important;
+}
+</style> -->
+
 
 @endsection
