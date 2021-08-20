@@ -13,7 +13,7 @@
             <a class="nav-link active" data-toggle="tab" href="#home">JANGKA PENDEK</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu1">JANGKA PANJANG</a>
+            <a class="nav-link" data-toggle="tab" href="#jangkapanjang">JANGKA PANJANG</a>
         </li>
     </ul>
 
@@ -36,7 +36,7 @@
         </div>
 
         <!-- JANGKA PANJANG  -->
-        <div id="menu2" class="container tab-pane fade  isiprogram">
+        <div id="jangkapanjang" class="container tab-pane fade  isiprogram">
             <br />
             <ul>
                 @foreach ($jangkapanjang as $jangkapanjang)
