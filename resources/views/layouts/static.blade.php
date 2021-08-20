@@ -70,7 +70,7 @@
 
     <!-- Footer -->
 
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="text-center text-lg-start bg-light text-muted footerflow">
         <!-- Section: Links  -->
         <section class="footer">
             <div class="container text-left text-md-start mt-5">
