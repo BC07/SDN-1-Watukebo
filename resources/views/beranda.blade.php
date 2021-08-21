@@ -8,9 +8,7 @@
         <div class="col-lg-6 card-marg">
             <div class="home-card">
                 <h1 style="z-index: auto;">JOIN US.</h1>
-                <P style="z-index: auto;"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolore, omnis! Ipsa necessitatibus deserunt id doloremque
-                    aliquid magnam reiciendis officia quam excepturi perferendis blanditiis.
+                <P style="z-index: auto;"> Bergabunglah menjadi salah satu bagian dari SDN 1 Watukebo dengan mendaftarkan anak anda melalui website kami. Fasilitas lengkap, lingkungan nyaman, serta guru yang berkompeten.
                 </P>
                 <div class="contariner-home-card">
                     @foreach ($linkdaftar as $_linkdaftar)
@@ -41,9 +39,6 @@
 
         <ul>
             <li class="judul">
-                Untuk mewujudkan visi tersebut di atas, sekolah berupaya antara lain :
-            </li>
-            <li>
                 Mendorong dan membantu semangat penghayatan terhadap ajaran agama yang dianut dan budaya bangsa.
             </li>
             <li>
@@ -64,7 +59,7 @@
                 Menanamkan dan membina budaya tertib, berfikir ilmiah serta budaya kerja kepada seluruh warga sekolah.
             </li>
             <li>
-                Mengutamakan keteladanan dalam proses pembelajaran yang berorientasi pada kemajuan peserta didik
+                Mengutamakan keteladanan dalam proses pembelajaran yang berorientasi pada kemajuan peserta didik.
             </li>
         </ul>
     </div>
